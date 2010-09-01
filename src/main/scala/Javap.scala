@@ -3,7 +3,6 @@ package jar
 
 import java.lang.{ ClassLoader => JavaClassLoader }
 import sun.tools.javap._
-import scala.tools.nsc.io.File
 import scala.tools.nsc.util.ScalaClassLoader
 import java.io.{ PrintWriter, ByteArrayInputStream }
 import Javap._
@@ -27,20 +26,13 @@ class Javap(val loader: ScalaClassLoader) {
   
   def apply(name: String) =
     fromName(name) orElse fromFile(name)
-  // 
-  // def apply(className: String): Unit  =
-  //   wrap(className) foreach (_.show())
-  // 
-  // def apply(className: String, methodName: String): Unit =
-  //   apply(className, _.getName == methodName)    
-  // 
-  // def apply(className: String, f: MethodData => Boolean): Unit =
-  //   wrap(className) foreach (_ show f)
-  // 
-  // def file(fileName: String) = Some(new Wrapper(File(fileName).toByteArray))
 }
 
 object Javap extends Javap() {
-  def apply(bytes: Array[Byte]): Disassembly = new Disassembly(bytes)
-  def apply(name: String, cl: ScalaClassLoader): Disassembly = new Disassembly(cl.findBytesForClassName(name))
+  def fromBytes(xs: Array[Byte]): Disassembly = new Disassembly(xs)
+  
+  def jar(path: String) = {
+    val source = new JarSource(File(path))
+    source.classFiles() map (_.disassembly)
+  }
 }

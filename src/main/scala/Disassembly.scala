@@ -3,7 +3,6 @@ package jar
 
 import java.lang.{ ClassLoader => JavaClassLoader }
 import sun.tools.javap._
-import scala.tools.nsc.io.File
 import scala.tools.nsc.util.{ ScalaClassLoader, stringFromWriter }
 import java.io.{ PrintWriter, ByteArrayInputStream }
 import Disassembly._
