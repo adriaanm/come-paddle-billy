@@ -22,18 +22,18 @@ object Compare {
     names foreach println
     println("")
     
-    pairs foreach { case (f1, f2) => 
-      println(">> Now processing: " + f1 + "\n")
-      jars(f1, f2)
-    }
+    pairs foreach { case (f1, f2) => jars(f1, f2) }
   }
   
   def jars(f1: File, f2: File) = {
     val lhs       = new JarDisassembly(f1)
     val rhs       = new JarDisassembly(f2)
     val missing   = new ListBuffer[String]
+    val rresolve  = new ListBuffer[String]
     val identical = new ListBuffer[String]
     val changed   = new ListBuffer[(String, List[String])]
+    
+    println(">> Now processing: " + lhs.size + " classes in " + f1.name + ".\n")
     
     for ((k, v) <- lhs) {
       if (rhs contains k) {
@@ -42,30 +42,42 @@ object Compare {
         
         if (xs1 == xs2) identical += k
         else {
-          val ldiff = xs1 filterNot (xs2 contains _) map (x => (x, true))
-          val rdiff = xs2 filterNot (xs1 contains _) map (x => (x, false))
+          val ldiff = xs1 filterNot (xs2 contains _)
+          val rdiff = xs2 filterNot (xs1 contains _)
           
-          val combined = ldiff ++ rdiff sortBy (_._1.name) map {
-            case (x, true)  => "< " + x.signature
-            case (x, false) => "> " + x.signature
+          if (ldiff ++ rdiff forall (_.name == "readResolve")) rresolve += k
+          else {
+            val tagged = (ldiff map (x => (x, true))) ++ (rdiff map (x => (x, false)))
+            val combined = tagged sortBy (_._1.name) map {
+              case (x, true)  => "< " + x.signature
+              case (x, false) => "> " + x.signature
+            }
+            changed += ((k, combined))
           }
-          
-          changed += ((k, combined))
         }
       }
       else missing += k
     }
     
     println("Classes identical in both jars: " + identical.size + "\n")
-    println("Classes in old jar but not new: " + missing.size)
-    missing foreach println
-    println("")
-    
-    println("Classes with altered signatures: " + changed.size)
-    for ((name, lines) <- changed) {
-      println(name)
-      lines foreach (x => println("  " + x))
+    if (missing.nonEmpty) {
+      println("Classes missing from new jar: " + missing.size)
+      missing foreach println
       println("")
+    }
+    if (rresolve.nonEmpty) {
+      println("Classes differing only in the readResolve() method: " + rresolve.size)
+      rresolve foreach println
+      println("")
+    }
+    if (changed.nonEmpty) {
+      println("Classes with altered signatures: " + changed.size)
+      for ((name, lines) <- changed) {
+        println(name)
+        lines foreach (x => println("  " + x))
+        println("")
+      }
+      println("")      
     }
   }
 
