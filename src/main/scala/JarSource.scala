@@ -2,7 +2,6 @@ package improving
 package jar
 
 import java.io.InputStream
-import Properties.{ javaHome }
 import Path.isJarOrZip
 import java.util.jar._
 import scala.util.matching.Regex

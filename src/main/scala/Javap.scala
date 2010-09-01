@@ -23,17 +23,14 @@ class Javap(val loader: ScalaClassLoader) {
   }
   def fromName(name: String) =
     optBytecode(name) map (x => new Disassembly(x))
+    
+  def fromBytes(xs: Array[Byte]): Disassembly =
+    new Disassembly(xs)
   
   def apply(name: String) =
     fromName(name) orElse fromFile(name)
 }
 
 object Javap extends Javap() {
-  def fromBytes(xs: Array[Byte]): Disassembly = new Disassembly(xs)
-  
-  def jar(path: String) = {
-    val f = File(path)
-    val source = new JarSource(f)
-    new JarDisassembly(f, source.classFiles() map (x => x.name -> x.disassembly) toMap)
-  }
+  def jar(path: String) = JarDisassembly(path)
 }

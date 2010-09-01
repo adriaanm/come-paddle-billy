@@ -6,6 +6,7 @@ package object jar {
   val ClassManifest   = scala.reflect.ClassManifest
   val NoManifest      = scala.reflect.NoManifest
   val Manifest        = scala.reflect.Manifest
+  type OptManifest[T] = scala.reflect.OptManifest[T]
   
   /** Scala compiler */
   type Directory        = scala.tools.nsc.io.Directory
@@ -17,13 +18,10 @@ package object jar {
   val File             = scala.tools.nsc.io.File
   val Path             = scala.tools.nsc.io.Path
   val Process          = scala.tools.nsc.io.Process
-  val Properties       = scala.tools.nsc.Properties
   val Streamable       = scala.tools.nsc.io.Streamable
   
   /** Scala library */
-  type ListBuffer[T]  = scala.collection.mutable.ListBuffer[T]
-  type OptManifest[T] = scala.reflect.OptManifest[T]
-  
+  type ListBuffer[T]  = scala.collection.mutable.ListBuffer[T]  
   val ListBuffer      = scala.collection.mutable.ListBuffer
   
   /** Java */

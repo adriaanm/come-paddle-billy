@@ -8,10 +8,21 @@ import java.io.{ PrintWriter, ByteArrayInputStream }
 import Disassembly._
 import scala.collection.{ mutable, immutable, generic }
 
-class JarDisassembly(file: File, val map: Map[String, Disassembly]) {
-  def keys = map.keys
-  def values = map.values
+class JarDisassembly(file: File) extends Iterable[(String, Disassembly)] {
+  val map: Map[String, Disassembly] =
+    new JarSource(file).classFiles() map (x => x.name -> x.disassembly) toMap
+  
+  def apply(name: String) = map(name)
+  val contains = map.keys.toSet
+  def iterator = map.iterator
+  def keys     = map.keys
+  def values   = map.values
   override def toString = file.toString
+}
+
+object JarDisassembly {
+  def apply(path: String): JarDisassembly = apply(File(path))
+  def apply(file: File): JarDisassembly = new JarDisassembly(file)
 }
 
 class Disassembly(val bytes: Array[Byte]) {
