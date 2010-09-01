@@ -1,3 +1,6 @@
+COME PADDLE BILLY
+=================
+
 It's a tool for comparing jars in case you ever wonder whether
 you're preserving binary compatibility.  (You're not!)
 

@@ -1,7 +1,7 @@
 package improving
 package jar
 
-object CompareDists {
+object Billy {
   /** Compares the first two things it sees in dists/ */
   def main(args: Array[String]): Unit = {
     val paths = Directory("dists").list.toArray filter (_.name startsWith "scala") map (x => x / "lib") take 2
