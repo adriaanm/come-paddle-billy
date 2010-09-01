@@ -11,9 +11,9 @@ import scala.collection.{ mutable, immutable, generic }
 class JarDisassembly(file: File) extends Iterable[(String, Disassembly)] {
   val map: Map[String, Disassembly] =
     new JarSource(file).classFiles() map (x => x.name -> x.disassembly) toMap
-  
+
+  def contains(name: String) = map contains name
   def apply(name: String) = map(name)
-  val contains = map.keys.toSet
   def iterator = map.iterator
   def keys     = map.keys
   def values   = map.values
@@ -23,6 +23,27 @@ class JarDisassembly(file: File) extends Iterable[(String, Disassembly)] {
 object JarDisassembly {
   def apply(path: String): JarDisassembly = apply(File(path))
   def apply(file: File): JarDisassembly = new JarDisassembly(file)
+}
+
+class MethodDisassembly(val javaClassName: String, val data: MethodData) {
+  private def withAccess(str: String) =
+    if (data.getAccess.isEmpty) str
+    else data.getAccess :+ str mkString " "
+  
+  def name      = data.getName
+  def params    = data.getParameters
+  def signature = withAccess(name + data.getInternalSig)
+  
+  def javaSig = withAccess(
+    if (name == "<init>") javaClassName + params
+    else data.getReturnType + " " + name + params
+  )
+  override def toString = signature
+  override def hashCode = signature.hashCode
+  override def equals(other: Any) = other match {
+    case x: MethodDisassembly => signature == x.signature
+    case _                    => false
+  }
 }
 
 class Disassembly(val bytes: Array[Byte]) {
@@ -39,14 +60,6 @@ class Disassembly(val bytes: Array[Byte]) {
     })
   }
   
-  def signature(method: MethodData) = {
-    val sig =
-      if (method.getName == "<init>") javaName + method.getParameters
-      else method.getReturnType + " " + method.getName + method.getParameters
-
-    method.getAccess.toList :+ sig mkString " "
-  }
-  
   def fields() = pwString(_.printfields())
   // asInstanceOf          getAccess             getArgumentlength
   // getAttributes         getCode               getCodeAttributes
@@ -59,15 +72,16 @@ class Disassembly(val bytes: Array[Byte]) {
   // read                  readCode              readExceptions
   // toString
   
+  
   // def signatures = methods map (x => x.getName + x.getInternalSig)
   // def signatures = methods map (x => x.getName + x.getInternalSig)
-  def javaSigs = methods map signature sorted
-  def sigs = methods map (x => x.getAccess :+ (x.getName + x.getInternalSig) mkString " ") sorted
+  // def javaSigs = methods map signature
+  // def sigs = methods map (x => x.getAccess :+ (x.getName + x.getInternalSig) mkString " ") sorted
   
   val cdata       = new ClassData(mkStream)
   def className   = cdata.getClassName
   def javaName    = javaclassname(className)
-  def methods     = cdata.getMethods.toList
+  def methods     = cdata.getMethods.toList map (x => new MethodDisassembly(javaName, x)) sortBy (_.name)
   def attrs       = cdata.getAttributes.toList
   def inners      = cdata.getInnerClasses.toList
   def sourceName  = strip(cdata.getSourceName())
@@ -86,7 +100,7 @@ class Disassembly(val bytes: Array[Byte]) {
   }
   
   def show(filt: MethodData => Boolean): Unit = {
-    methods filter filt foreach (printer printMethodAttributes _)
+    methods map (_.data) filter filt foreach (printer printMethodAttributes _)
   }
   
   private def strip(s: String): String =
