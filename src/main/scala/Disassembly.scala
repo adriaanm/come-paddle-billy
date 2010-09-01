@@ -6,6 +6,13 @@ import sun.tools.javap._
 import scala.tools.nsc.util.{ ScalaClassLoader, stringFromWriter }
 import java.io.{ PrintWriter, ByteArrayInputStream }
 import Disassembly._
+import scala.collection.{ mutable, immutable, generic }
+
+class JarDisassembly(file: File, val map: Map[String, Disassembly]) {
+  def keys = map.keys
+  def values = map.values
+  override def toString = file.toString
+}
 
 class Disassembly(val bytes: Array[Byte]) {
   def mkStream  = new ByteArrayInputStream(bytes)  

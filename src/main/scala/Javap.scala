@@ -32,7 +32,8 @@ object Javap extends Javap() {
   def fromBytes(xs: Array[Byte]): Disassembly = new Disassembly(xs)
   
   def jar(path: String) = {
-    val source = new JarSource(File(path))
-    source.classFiles() map (_.disassembly)
+    val f = File(path)
+    val source = new JarSource(f)
+    new JarDisassembly(f, source.classFiles() map (x => x.name -> x.disassembly) toMap)
   }
 }

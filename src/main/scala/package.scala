@@ -21,8 +21,6 @@ package object jar {
   val Streamable       = scala.tools.nsc.io.Streamable
   
   /** Scala library */
-  type HashMap[A, B]  = scala.collection.mutable.HashMap[A, B]
-  type HashSet[A]     = scala.collection.mutable.HashSet[A]
   type ListBuffer[T]  = scala.collection.mutable.ListBuffer[T]
   type OptManifest[T] = scala.reflect.OptManifest[T]
   
