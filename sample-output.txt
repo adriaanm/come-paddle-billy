@@ -1,0 +1,2679 @@
+Found 6 jars to compare:
+jline.jar
+scala-compiler.jar
+scala-dbc.jar
+scala-library.jar
+scala-swing.jar
+scalap.jar
+
+>> Now processing: 35 classes in jline.jar.
+
+Classes identical in both jars: 35
+
+>> Now processing: 5454 classes in scala-compiler.jar.
+
+Classes identical in both jars: 4940
+
+Classes missing from new jar: 105
+scala/tools/nsc/ast/DocComments$$anonfun$scala$tools$nsc$ast$DocComments$$expandVariables$1.class
+scala/tools/nsc/ast/DocComments$DocComment$$anonfun$x$11$1.class
+scala/tools/nsc/ast/DocComments$DocComment$$anonfun$x$11$2.class
+scala/tools/nsc/doc/html/page/Template$$anonfun$memberToCommentBodyHtml$5.class
+scala/tools/nsc/doc/model/DocTemplateEntity$$anonfun$findMember$1.class
+scala/tools/nsc/doc/model/DocTemplateEntity$class.class
+scala/tools/nsc/doc/model/ModelFactory$$anon$15$$anonfun$appendType0$2.class
+scala/tools/nsc/doc/model/ModelFactory$$anon$3$$anonfun$12.class
+scala/tools/nsc/doc/model/ModelFactory$$anon$3$$anonfun$valueParams$3$$anonfun$apply$6.class
+scala/tools/nsc/doc/model/ModelFactory$$anon$3$$anonfun$valueParams$3.class
+scala/tools/nsc/doc/model/ModelFactory$$anon$5$$anonfun$valueParams$2$$anonfun$apply$5.class
+scala/tools/nsc/doc/model/ModelFactory$$anon$5$$anonfun$valueParams$2.class
+scala/tools/nsc/doc/model/ModelFactory$$anon$6$$anonfun$typeParams$2.class
+scala/tools/nsc/doc/model/ModelFactory$$anonfun$1.class
+scala/tools/nsc/doc/model/ModelFactory$$anonfun$13.class
+scala/tools/nsc/doc/model/ModelFactory$$anonfun$makeTemplate$2$$anonfun$apply$4.class
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$2.class
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$5$$anonfun$apply$2.class
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$parentTemplates$1.class
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$parentType$1.class
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$typeParams$1$$anonfun$apply$1.class
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$typeParams$1.class
+scala/tools/nsc/doc/model/ModelFactory$PackageImpl$$anonfun$11.class
+scala/tools/nsc/doc/model/comment/CommentFactory$$anon$1$$anonfun$20.class
+scala/tools/nsc/doc/model/comment/CommentFactory$WikiParser$$anonfun$28.class
+scala/tools/nsc/symtab/Symbols$Symbol$$anonfun$getAnnotationArg$1.class
+scala/tools/nsc/symtab/Symbols$Symbol$$anonfun$getAnnotationArg$2.class
+scala/tools/nsc/transform/CleanUp$CleanUpTransformer$$anonfun$5.class
+scala/tools/nsc/transform/CleanUp$CleanUpTransformer$$anonfun$6.class
+scala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3$$anonfun$12.class
+scala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3$$anonfun$13$$anonfun$apply$4.class
+scala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3$$anonfun$13$$anonfun$apply$5.class
+scala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3$$anonfun$13.class
+scala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3$LoopControl$2.class
+scala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3$LoopControl$3$.class
+scala/tools/nsc/transform/Mixin$$anonfun$mixinTraitMembers$1$1$$anonfun$2.class
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anon$4$$anonfun$11$$anonfun$12.class
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anon$4$$anonfun$11.class
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$13.class
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$14$$anonfun$apply$7.class
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$14$$anonfun$apply$8.class
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$3.class
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$21.class
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$25.class
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$35.class
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$implSpecClasses$1$$anonfun$apply$22$$anonfun$36.class
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$makeSpecializedMembers$2$$anonfun$34.class
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$transform$3$$anonfun$24.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$14$$anonfun$15.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$14$$anonfun$apply$9.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$16.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$18$$anonfun$apply$12.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$18.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$37$$anonfun$apply$23.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$37.class
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$makeTypeArguments$1$$anonfun$apply$24.class
+scala/tools/nsc/transform/SpecializeTypes$FullTypeMap$1$$anonfun$17.class
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch$$anonfun$companionImplicits$1$$anonfun$apply$1.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$10.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$11$$anonfun$12.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$11.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$16.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$38.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$39.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$40.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$8.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$9.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$checkKindBounds$1$$anonfun$apply$4.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$checkKindBounds$1$$anonfun$apply$5.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$checkKindBounds$1$$anonfun$apply$6.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$checkKindBoundsHK$1$1.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferExprAlternative$1$$anonfun$30.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferExprAlternative$1$$anonfun$31.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferExprAlternative$1$$anonfun$32.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1$$anonfun$33.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1$$anonfun$34$$anonfun$35.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1$$anonfun$34$$anonfun$apply$7.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1$$anonfun$34.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1$$anonfun$36.class
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$methTypeArgs$2$$anonfun$apply$3.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$13.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$22$$anonfun$apply$15.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$23.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$3.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$15$$anonfun$apply$13.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$18$$anonfun$19.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$18.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$20.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$enterSymFinishWith$1$$anonfun$4.class
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$typeDefSig$1.class
+scala/tools/nsc/typechecker/Namers$PolyTypeCompleter$$anonfun$24.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anon$2$$anonfun$validateVariance$1$1.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anon$2$$anonfun$validateVariance$1$2.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anon$2$$anonfun$validateVariance$1$3.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anon$2$$anonfun$validateVarianceArgs$1$1.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anon$2$$anonfun$validateVariances$1$1.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anon$2.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$16$$anonfun$apply$7.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$17$$anonfun$18.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$applyRefchecksToAnnotations$1.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$checkAllOverrides$2$$anonfun$apply$5.class
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$checkAllOverrides$2.class
+scala/tools/nsc/typechecker/Typers$Typer$$anonfun$adapt$3.class
+scala/tools/nsc/typechecker/Typers$Typer$SymInstance.class
+scala/tools/nsc/typechecker/Unapplies$$anonfun$createFun$1$1.class
+
+Classes differing only in the readResolve() method: 210
+scala/tools/ant/sabbus/CompilationFailure$.class
+scala/tools/nsc/CompilationUnits$CompilationUnit$Comment$.class
+scala/tools/nsc/FatalError$.class
+scala/tools/nsc/Interpreter$ComputedImports$.class
+scala/tools/nsc/Interpreter$DebugParam$.class
+scala/tools/nsc/Interpreter$InterpreterEvalException$.class
+scala/tools/nsc/InterpreterControl$LineArg$.class
+scala/tools/nsc/InterpreterControl$NoArgs$.class
+scala/tools/nsc/InterpreterControl$OneArg$.class
+scala/tools/nsc/InterpreterControl$Result$.class
+scala/tools/nsc/InterpreterControl$VarArgs$.class
+scala/tools/nsc/InterpreterLoop$PasteCommand$.class
+scala/tools/nsc/ast/DocComments$DocComment$.class
+scala/tools/nsc/ast/DocComments$UseCase$.class
+scala/tools/nsc/ast/TreeBrowsers$ProgramTree$.class
+scala/tools/nsc/ast/TreeBrowsers$UnitTree$.class
+scala/tools/nsc/ast/TreeDSL$CODE$SelectStart$.class
+scala/tools/nsc/ast/Trees$AssignOrNamedArg$.class
+scala/tools/nsc/ast/Trees$DocDef$.class
+scala/tools/nsc/ast/Trees$Parens$.class
+scala/tools/nsc/ast/Trees$TypeTree$.class
+scala/tools/nsc/ast/parser/BracePair$.class
+scala/tools/nsc/ast/parser/BracePatch$.class
+scala/tools/nsc/ast/parser/Deletion$.class
+scala/tools/nsc/ast/parser/Insertion$.class
+scala/tools/nsc/ast/parser/Parsers$OpInfo$.class
+scala/tools/nsc/ast/parser/TreeBuilder$Filter$.class
+scala/tools/nsc/ast/parser/TreeBuilder$ValEq$.class
+scala/tools/nsc/ast/parser/TreeBuilder$ValFrom$.class
+scala/tools/nsc/backend/icode/GenICode$ICodePhase$Finalizer$.class
+scala/tools/nsc/backend/icode/GenICode$ICodePhase$MonitorRelease$.class
+scala/tools/nsc/backend/icode/GenICode$PCJUMP$.class
+scala/tools/nsc/backend/icode/GenICode$PCZJUMP$.class
+scala/tools/nsc/backend/icode/GenICode$PJUMP$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$BOX$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$CALL_METHOD$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$CALL_PRIMITIVE$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$CHECK_CAST$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$CJUMP$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$CONSTANT$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$CREATE_ARRAY$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$CZJUMP$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$DROP$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$DUP$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$IS_INSTANCE$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$JUMP$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$LOAD_ARRAY_ITEM$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$LOAD_EXCEPTION$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$LOAD_FIELD$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$LOAD_LOCAL$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$LOAD_MODULE$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$MONITOR_ENTER$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$MONITOR_EXIT$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$NEW$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$RETURN$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$SCOPE_ENTER$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$SCOPE_EXIT$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$STORE_ARRAY_ITEM$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$STORE_FIELD$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$STORE_LOCAL$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$STORE_THIS$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$SWITCH$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$Static$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$SuperCall$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$THIS$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$THROW$.class
+scala/tools/nsc/backend/icode/Opcodes$opcodes$UNBOX$.class
+scala/tools/nsc/backend/icode/Primitives$Arithmetic$.class
+scala/tools/nsc/backend/icode/Primitives$ArrayLength$.class
+scala/tools/nsc/backend/icode/Primitives$Comparison$.class
+scala/tools/nsc/backend/icode/Primitives$Conversion$.class
+scala/tools/nsc/backend/icode/Primitives$Logical$.class
+scala/tools/nsc/backend/icode/Primitives$Negation$.class
+scala/tools/nsc/backend/icode/Primitives$Shift$.class
+scala/tools/nsc/backend/icode/Primitives$StringConcat$.class
+scala/tools/nsc/backend/icode/Primitives$Test$.class
+scala/tools/nsc/backend/icode/TypeKinds$ARRAY$.class
+scala/tools/nsc/backend/icode/TypeKinds$BOXED$.class
+scala/tools/nsc/backend/icode/TypeKinds$REFERENCE$.class
+scala/tools/nsc/backend/icode/analysis/CompleteLattice$IState$.class
+scala/tools/nsc/backend/icode/analysis/CopyPropagation$Boxed$.class
+scala/tools/nsc/backend/icode/analysis/CopyPropagation$Const$.class
+scala/tools/nsc/backend/icode/analysis/CopyPropagation$Deref$.class
+scala/tools/nsc/backend/icode/analysis/CopyPropagation$Field$.class
+scala/tools/nsc/backend/icode/analysis/CopyPropagation$LocalVar$.class
+scala/tools/nsc/backend/icode/analysis/CopyPropagation$Record$.class
+scala/tools/nsc/backend/icode/analysis/TypeFlowAnalysis$MethodTFA$Bind$.class
+scala/tools/nsc/backend/icode/analysis/TypeFlowAnalysis$MethodTFA$Const$.class
+scala/tools/nsc/backend/icode/analysis/TypeFlowAnalysis$MethodTFA$Push$.class
+scala/tools/nsc/backend/icode/analysis/TypeFlowAnalysis$MethodTFA$TypeOfStackPos$.class
+scala/tools/nsc/backend/icode/analysis/TypeFlowAnalysis$MethodTFA$TypeOfVar$.class
+scala/tools/nsc/dependencies/Changes$Added$.class
+scala/tools/nsc/dependencies/Changes$Changed$.class
+scala/tools/nsc/dependencies/Changes$Class$.class
+scala/tools/nsc/dependencies/Changes$Definition$.class
+scala/tools/nsc/dependencies/Changes$ParentChanged$.class
+scala/tools/nsc/dependencies/Changes$Removed$.class
+scala/tools/nsc/dependencies/DependencyAnalysis$Inherited$.class
+scala/tools/nsc/doc/model/PrivateInInstance$.class
+scala/tools/nsc/doc/model/PrivateInTemplate$.class
+scala/tools/nsc/doc/model/ProtectedInInstance$.class
+scala/tools/nsc/doc/model/ProtectedInTemplate$.class
+scala/tools/nsc/doc/model/Public$.class
+scala/tools/nsc/doc/model/comment/Body$.class
+scala/tools/nsc/doc/model/comment/Bold$.class
+scala/tools/nsc/doc/model/comment/Chain$.class
+scala/tools/nsc/doc/model/comment/Code$.class
+scala/tools/nsc/doc/model/comment/CommentFactory$SimpleTagKey$.class
+scala/tools/nsc/doc/model/comment/CommentFactory$SymbolTagKey$.class
+scala/tools/nsc/doc/model/comment/DefinitionList$.class
+scala/tools/nsc/doc/model/comment/EntityLink$.class
+scala/tools/nsc/doc/model/comment/HorizontalRule$.class
+scala/tools/nsc/doc/model/comment/HtmlTag$.class
+scala/tools/nsc/doc/model/comment/Italic$.class
+scala/tools/nsc/doc/model/comment/Link$.class
+scala/tools/nsc/doc/model/comment/Monospace$.class
+scala/tools/nsc/doc/model/comment/OrderedList$.class
+scala/tools/nsc/doc/model/comment/Paragraph$.class
+scala/tools/nsc/doc/model/comment/Subscript$.class
+scala/tools/nsc/doc/model/comment/Summary$.class
+scala/tools/nsc/doc/model/comment/Superscript$.class
+scala/tools/nsc/doc/model/comment/Text$.class
+scala/tools/nsc/doc/model/comment/Title$.class
+scala/tools/nsc/doc/model/comment/Underline$.class
+scala/tools/nsc/doc/model/comment/UnorderedList$.class
+scala/tools/nsc/interactive/CompilerControl$ScopeMember$.class
+scala/tools/nsc/interactive/CompilerControl$TypeMember$.class
+scala/tools/nsc/interactive/RangePositions$Range$.class
+scala/tools/nsc/interactive/RefinedBuildManager$SymWithHistory$.class
+scala/tools/nsc/io/FileOperationException$.class
+scala/tools/nsc/javac/JavaParsers$JavaOpInfo$.class
+scala/tools/nsc/matching/Matrix$MatrixContext$.class
+scala/tools/nsc/matching/Matrix$MatrixContext$MatrixInit$.class
+scala/tools/nsc/matching/MatrixAdditions$MatrixExhaustiveness$ExhaustivenessChecker$Combo$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$FinalState$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$Guard$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$MixTypes$No$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$MixTypes$Yes$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$PatternMatch$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$Rep$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$Row$.class
+scala/tools/nsc/matching/ParallelMatching$MatchMatrix$VariableRule$.class
+scala/tools/nsc/matching/PatternBindings$Binding$.class
+scala/tools/nsc/matching/PatternBindings$PseudoType$.class
+scala/tools/nsc/matching/Patterns$AlternativePattern$.class
+scala/tools/nsc/matching/Patterns$ApplyIdentPattern$.class
+scala/tools/nsc/matching/Patterns$ApplySelectPattern$.class
+scala/tools/nsc/matching/Patterns$ConstructorPattern$.class
+scala/tools/nsc/matching/Patterns$ExtractorPattern$.class
+scala/tools/nsc/matching/Patterns$LiteralPattern$.class
+scala/tools/nsc/matching/Patterns$ObjectPattern$.class
+scala/tools/nsc/matching/Patterns$SequenceExtractorPattern$.class
+scala/tools/nsc/matching/Patterns$SequencePattern$.class
+scala/tools/nsc/matching/Patterns$SimpleIdPattern$.class
+scala/tools/nsc/matching/Patterns$StableIdPattern$.class
+scala/tools/nsc/matching/Patterns$StarPattern$.class
+scala/tools/nsc/matching/Patterns$ThisPattern$.class
+scala/tools/nsc/matching/Patterns$TuplePattern$.class
+scala/tools/nsc/matching/Patterns$TypedPattern$.class
+scala/tools/nsc/matching/Patterns$VariablePattern$.class
+scala/tools/nsc/matching/Patterns$WildcardPattern$.class
+scala/tools/nsc/symtab/AnnotationInfos$AnnotationInfo$.class
+scala/tools/nsc/symtab/AnnotationInfos$ArrayAnnotArg$.class
+scala/tools/nsc/symtab/AnnotationInfos$LazyAnnotationInfo$.class
+scala/tools/nsc/symtab/AnnotationInfos$LiteralAnnotArg$.class
+scala/tools/nsc/symtab/AnnotationInfos$NestedAnnotArg$.class
+scala/tools/nsc/symtab/AnnotationInfos$ScalaSigBytes$.class
+scala/tools/nsc/symtab/Symbols$CyclicReference$.class
+scala/tools/nsc/symtab/Symbols$TypeHistory$.class
+scala/tools/nsc/symtab/Types$AnnotatedType$.class
+scala/tools/nsc/symtab/Types$AntiPolyType$.class
+scala/tools/nsc/symtab/Types$BoundedWildcardType$.class
+scala/tools/nsc/symtab/Types$ClassInfoType$.class
+scala/tools/nsc/symtab/Types$ConstantType$.class
+scala/tools/nsc/symtab/Types$DeBruijnIndex$.class
+scala/tools/nsc/symtab/Types$ExistentialType$.class
+scala/tools/nsc/symtab/Types$MethodType$.class
+scala/tools/nsc/symtab/Types$NamedType$.class
+scala/tools/nsc/symtab/Types$NotNullType$.class
+scala/tools/nsc/symtab/Types$OverloadedType$.class
+scala/tools/nsc/symtab/Types$PolyType$.class
+scala/tools/nsc/symtab/Types$RefinedType$.class
+scala/tools/nsc/symtab/Types$SingleType$.class
+scala/tools/nsc/symtab/Types$SuperType$.class
+scala/tools/nsc/symtab/Types$ThisType$.class
+scala/tools/nsc/symtab/Types$TypeBounds$.class
+scala/tools/nsc/symtab/Types$TypeRef$.class
+scala/tools/nsc/symtab/classfile/ClassfileParser$InnerClassEntry$.class
+scala/tools/nsc/symtab/classfile/ICodeReader$LinearCode$LCJUMP$.class
+scala/tools/nsc/symtab/classfile/ICodeReader$LinearCode$LCZJUMP$.class
+scala/tools/nsc/symtab/classfile/ICodeReader$LinearCode$LJUMP$.class
+scala/tools/nsc/symtab/classfile/ICodeReader$LinearCode$LSWITCH$.class
+scala/tools/nsc/transform/Reifiers$FreeValue$.class
+scala/tools/nsc/transform/SpecializeTypes$Forward$.class
+scala/tools/nsc/transform/SpecializeTypes$Implementation$.class
+scala/tools/nsc/transform/SpecializeTypes$NormalizedMember$.class
+scala/tools/nsc/transform/SpecializeTypes$Overload$.class
+scala/tools/nsc/transform/SpecializeTypes$SpecialOverload$.class
+scala/tools/nsc/transform/SpecializeTypes$SpecialOverride$.class
+scala/tools/nsc/transform/SpecializeTypes$SpecializedAccessor$.class
+scala/tools/nsc/transform/SpecializeTypes$SpecializedInnerClass$.class
+scala/tools/nsc/typechecker/Contexts$ImportType$.class
+scala/tools/nsc/typechecker/NamesDefaults$NamedApplyInfo$.class
+scala/tools/nsc/util/ClassPath$ClassRep$.class
+scala/tools/nsc/util/CommandLine$.class
+scala/tools/nsc/util/FakePos$.class
+scala/tools/nsc/util/ShowPickled$PickleBufferEntry$.class
+scala/tools/nsc/util/ShowPickled$PickleBufferEntryList$.class
+scala/tools/nsc/util/Statistics$IntPair$.class
+scala/tools/nsc/util/Statistics$LongPair$.class
+
+Classes with altered signatures: 199
+scala/tools/nsc/Global$analyzer$.class
+  > public final ImplicitNotFoundMsg()Lscala/tools/nsc/typechecker/Implicits$ImplicitNotFoundMsg$;
+  > public companionClassOf(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public companionModuleDef$default$2()Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;I)Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;IZ)Lscala/collection/immutable/List;
+  > public formalTypes(Lscala/collection/immutable/List;IZZ)Lscala/collection/immutable/List;
+  > public formalTypes$default$3()Z
+  > public formalTypes$default$4()Z
+
+scala/tools/nsc/Global.class
+  > public createJavadoc()Z
+
+scala/tools/nsc/Interpreter$ReqAndHandler$3$.class
+  < public <init>(Lscala/tools/nsc/Interpreter;)V
+  > public <init>(Lscala/tools/nsc/Interpreter;Lscala/runtime/ObjectRef;)V
+  > public readResolve()Ljava/lang/Object;
+
+scala/tools/nsc/Interpreter.class
+  < private final ComputedImports()Lscala/tools/nsc/Interpreter$ComputedImports$;
+  < private final ReqAndHandler$1(Lscala/runtime/ObjectRef;)Lscala/tools/nsc/Interpreter$ReqAndHandler$3$;
+  > public final ReqAndHandler$1(Lscala/runtime/ObjectRef;)Lscala/tools/nsc/Interpreter$ReqAndHandler$3$;
+  > public final scala$tools$nsc$Interpreter$$ComputedImports()Lscala/tools/nsc/Interpreter$ComputedImports$;
+
+scala/tools/nsc/ast/DocComments$DocComment.class
+  < private x$11()Lscala/Tuple3;
+  > private x$12()Lscala/Tuple3;
+
+scala/tools/nsc/ast/DocComments$class.class
+  < public static cookedDocComment(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  > public static cookedDocComment(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;)Ljava/lang/String;
+  > public static cookedDocComment$default$2(Lscala/tools/nsc/symtab/SymbolTable;)Ljava/lang/String;
+  > public static docComment(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;Lscala/tools/nsc/util/Position;)Ljava/lang/Object;
+  > public static docComment$default$3(Lscala/tools/nsc/symtab/SymbolTable;)Lscala/tools/nsc/util/Position;
+  > public static expandVariables(Lscala/tools/nsc/symtab/SymbolTable;Ljava/lang/String;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  < public static expandedDocComment(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  > public static expandedDocComment(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;)Ljava/lang/String;
+  > public static expandedDocComment$default$3(Lscala/tools/nsc/symtab/SymbolTable;)Ljava/lang/String;
+  < public static final scala$tools$nsc$ast$DocComments$$expandVariables(Lscala/tools/nsc/symtab/SymbolTable;Ljava/lang/String;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  < private static superComment(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/Option;
+  > public static superComment(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/Option;
+
+scala/tools/nsc/ast/DocComments.class
+  < public abstract cookedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  > public abstract cookedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;)Ljava/lang/String;
+  > public abstract cookedDocComment$default$2()Ljava/lang/String;
+  > public abstract docComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;Lscala/tools/nsc/util/Position;)Ljava/lang/Object;
+  > public abstract docComment$default$3()Lscala/tools/nsc/util/Position;
+  > public abstract expandVariables(Ljava/lang/String;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  < public abstract expandedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  > public abstract expandedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;)Ljava/lang/String;
+  > public abstract expandedDocComment$default$3()Ljava/lang/String;
+  > public abstract superComment(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/Option;
+
+scala/tools/nsc/ast/TreeInfo.class
+  > public firstConstructorArgs(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+
+scala/tools/nsc/ast/Trees$LazyTreeCopier.class
+  > public TypeTreeWithDeferredRefCheck(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/ast/Trees$TypeTreeWithDeferredRefCheck;
+
+scala/tools/nsc/ast/Trees$StrictTreeCopier.class
+  > public TypeTreeWithDeferredRefCheck(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/ast/Trees$TypeTreeWithDeferredRefCheck;
+
+scala/tools/nsc/ast/Trees$TreeCopier.class
+  > public abstract TypeTreeWithDeferredRefCheck(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/ast/Trees$TypeTreeWithDeferredRefCheck;
+
+scala/tools/nsc/ast/Trees.class
+  > public abstract TypeTreeWithDeferredRefCheck()Lscala/tools/nsc/ast/Trees$TypeTreeWithDeferredRefCheck$;
+
+scala/tools/nsc/ast/parser/Scanners$Scanner.class
+  > public static <clinit>()V
+
+scala/tools/nsc/backend/ScalaPrimitives.class
+  > private final elementType$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+  < private final gd1$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/doc/DocFactory$$anon$1.class
+  > public JavadocTags()Lscala/util/matching/Regex;
+  > public commentCache()Lscala/collection/mutable/HashMap;
+  > public createComment(Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/Map;Lscala/collection/Map;Lscala/collection/Map;Lscala/Option;Lscala/Option;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/Option;)Lscala/tools/nsc/doc/model/comment/Comment;
+  > public createComment$default$1()Lscala/Option;
+  > public createComment$default$10()Lscala/collection/immutable/List;
+  > public createComment$default$11()Lscala/Option;
+  > public createComment$default$12()Lscala/collection/immutable/List;
+  > public createComment$default$13()Lscala/collection/immutable/List;
+  > public createComment$default$14()Lscala/Option;
+  > public createComment$default$15()Lscala/Option;
+  > public createComment$default$2()Lscala/collection/immutable/List;
+  > public createComment$default$3()Lscala/collection/immutable/List;
+  > public createComment$default$4()Lscala/Option;
+  > public createComment$default$5()Lscala/collection/Map;
+  > public createComment$default$6()Lscala/collection/Map;
+  > public createComment$default$7()Lscala/collection/Map;
+  > public createComment$default$8()Lscala/Option;
+  > public createComment$default$9()Lscala/Option;
+  > public defineComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/Function0;)Lscala/Option;
+  > public javadocReplacement(Lscala/util/matching/Regex$Match;)Ljava/lang/String;
+  > public makeTree(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/doc/model/TreeEntity;
+  < public parse(Ljava/lang/String;Lscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+  > public parse(Ljava/lang/String;Ljava/lang/String;Lscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+  < public final scala$tools$nsc$doc$model$comment$CommentFactory$$commentCache()Lscala/collection/mutable/HashMap;
+  > public scala$tools$nsc$doc$model$comment$CommentFactory$_setter_$JavadocTags_$eq(Lscala/util/matching/Regex;)V
+  > public scala$tools$nsc$doc$model$comment$CommentFactory$_setter_$commentCache_$eq(Lscala/collection/mutable/HashMap;)V
+  < public scala$tools$nsc$doc$model$comment$CommentFactory$_setter_$scala$tools$nsc$doc$model$comment$CommentFactory$$commentCache_$eq(Lscala/collection/mutable/HashMap;)V
+
+scala/tools/nsc/doc/DocFactory$compiler$.class
+  > public final Range()Lscala/tools/nsc/interactive/RangePositions$Range$;
+  > public atPos(Lscala/tools/nsc/util/Position;Lscala/reflect/generic/Trees$Tree;)Lscala/reflect/generic/Trees$Tree;
+  > public ensureNonOverlapping(Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)V
+  > public findOverlapping(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+  > public rangePos(Lscala/tools/nsc/util/SourceFile;III)Lscala/tools/nsc/util/RangePosition;
+  > public rangePos(Lscala/tools/nsc/util/SourceFile;III)Lscala/tools/nsc/util/OffsetPosition;
+  > public final scala$tools$nsc$interactive$RangePositions$$maxFree()Lscala/tools/nsc/interactive/RangePositions$Range;
+  > public final scala$tools$nsc$interactive$RangePositions$$super$atPos(Lscala/tools/nsc/util/Position;Lscala/reflect/generic/Trees$Tree;)Lscala/reflect/generic/Trees$Tree;
+  > public solidDescendants(Lscala/reflect/generic/Trees$Tree;)Lscala/collection/immutable/List;
+  > public validatePositions(Lscala/reflect/generic/Trees$Tree;)V
+  > public wrappingPos(Lscala/tools/nsc/util/Position;Lscala/collection/immutable/List;)Lscala/tools/nsc/util/Position;
+  > public wrappingPos(Lscala/collection/immutable/List;)Lscala/tools/nsc/util/Position;
+
+scala/tools/nsc/doc/DocFactory.class
+  > public universe(Lscala/collection/immutable/List;)Lscala/Option;
+
+scala/tools/nsc/doc/Settings.class
+  > public useStupidTypes()Lscala/tools/nsc/settings/MutableSettings$BooleanSetting;
+
+scala/tools/nsc/doc/Universe.class
+  < public <init>(Lscala/tools/nsc/doc/Settings;Lscala/tools/nsc/doc/model/Package;)V
+  < public rootPackage()Lscala/tools/nsc/doc/model/Package;
+  > public abstract rootPackage()Lscala/tools/nsc/doc/model/Package;
+  < public settings()Lscala/tools/nsc/doc/Settings;
+  > public abstract settings()Lscala/tools/nsc/doc/Settings;
+
+scala/tools/nsc/doc/html/HtmlFactory.class
+  < public generate(Lscala/tools/nsc/doc/Universe;)V
+  > public generate()V
+
+scala/tools/nsc/doc/html/HtmlPage.class
+  > public docEntityKindToBigImage(Lscala/tools/nsc/doc/model/DocTemplateEntity;)Ljava/lang/String;
+  > public typesToHtml(Lscala/collection/immutable/List;ZLscala/xml/NodeSeq;)Lscala/xml/NodeSeq;
+
+scala/tools/nsc/doc/html/page/Index.class
+  > public browser()Lscala/xml/Elem;
+
+scala/tools/nsc/doc/html/page/Template$$anonfun$10.class
+  < public final apply(Lscala/tools/nsc/doc/model/Constructor;)Lscala/collection/immutable/List;
+  > public final apply(Lscala/Tuple2;)Lscala/xml/Elem;
+
+scala/tools/nsc/doc/html/page/Template$$anonfun$11.class
+  < public <init>(Lscala/tools/nsc/doc/html/page/Template;Lscala/tools/nsc/doc/model/MemberEntity;)V
+  > public <init>(Lscala/tools/nsc/doc/html/page/Template;)V
+  < public final apply(Lscala/tools/nsc/doc/model/ParameterEntity;)Z
+  > public final apply(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/html/page/Template$$anonfun$12.class
+  < public <init>(Lscala/tools/nsc/doc/html/page/Template;)V
+  > public <init>(Lscala/tools/nsc/doc/html/page/Template;Lscala/tools/nsc/doc/model/MemberEntity;)V
+  < public final apply(Lscala/tools/nsc/doc/model/comment/Body;)Lscala/xml/Elem;
+  > public final apply(Lscala/tools/nsc/doc/model/ParameterEntity;)Z
+
+scala/tools/nsc/doc/html/page/Template.class
+  < private final bound0$1(Lscala/Option;Ljava/lang/String;Z)Lscala/xml/NodeSeq;
+  > private final bound0$1(Lscala/Option;Ljava/lang/String;)Ljava/lang/String;
+  > private final bound0$2(Lscala/Option;Ljava/lang/String;Z)Lscala/xml/NodeSeq;
+  > public boundsToString(Lscala/Option;Lscala/Option;)Ljava/lang/String;
+  > public final defParamsString$1(Lscala/tools/nsc/doc/model/Entity;)Ljava/lang/String;
+  > public defParamsToString(Lscala/tools/nsc/doc/model/Def;)Ljava/lang/String;
+  > public defaultValueToHtml(Lscala/tools/nsc/doc/model/TreeEntity;)Lscala/xml/NodeSeq;
+  < private final gd1$1(Lscala/tools/nsc/doc/model/NonTemplateMemberEntity;)Z
+  > private final gd1$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;Z)Z
+  < private final gd10$1(Lscala/tools/nsc/doc/model/Class;)Z
+  > private final gd10$1(Lscala/tools/nsc/doc/model/TemplateEntity;Lscala/tools/nsc/doc/model/MemberEntity;)Z
+  < private final gd2$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;Z)Z
+  > private final gd2$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;Lscala/tools/nsc/doc/model/MemberEntity;)Z
+  < private final gd3$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;Lscala/tools/nsc/doc/model/MemberEntity;)Z
+  > private final gd3$1(Lscala/tools/nsc/doc/model/NonTemplateMemberEntity;)Z
+  < private final gd4$1(Lscala/tools/nsc/doc/model/Class;)Z
+  > private final gd4$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;ZZ)Z
+  < private final gd5$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;Z)Z
+  > private final gd5$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;ZZ)Z
+  < private final gd6$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;Z)Z
+  > private final gd6$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;ZZ)Z
+  < private final gd7$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;Z)Z
+  > private final gd7$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;ZZ)Z
+  < private final gd8$1(Lscala/tools/nsc/doc/model/TemplateEntity;Lscala/tools/nsc/doc/model/MemberEntity;)Z
+  > private final gd8$1(Lscala/tools/nsc/doc/model/DocTemplateEntity;ZZ)Z
+  > public final indentation$1(Lscala/runtime/IntRef;)Lscala/xml/NodeSeq;
+  < private final inside$1(ZLscala/tools/nsc/doc/model/MemberEntity;)Lscala/xml/NodeSeq;
+  > private final inside$1(ZLscala/tools/nsc/doc/model/MemberEntity;Z)Lscala/xml/NodeSeq;
+  < public memberToCommentBodyHtml(Lscala/tools/nsc/doc/model/MemberEntity;Z)Lscala/xml/NodeSeq;
+  > public memberToCommentBodyHtml(Lscala/tools/nsc/doc/model/MemberEntity;ZZ)Lscala/xml/NodeSeq;
+  > public memberToCommentBodyHtml$default$3()Z
+  > public memberToInlineCommentHtml(Lscala/tools/nsc/doc/model/MemberEntity;Z)Lscala/xml/NodeSeq;
+  > public memberToShortCommentHtml(Lscala/tools/nsc/doc/model/MemberEntity;Z)Lscala/xml/NodeSeq;
+  > public memberToUseCaseCommentHtml(Lscala/tools/nsc/doc/model/MemberEntity;Z)Lscala/xml/NodeSeq;
+  < public signature(Lscala/tools/nsc/doc/model/MemberEntity;Z)Lscala/xml/NodeSeq;
+  > public signature(Lscala/tools/nsc/doc/model/MemberEntity;ZZ)Lscala/xml/NodeSeq;
+  > public signature$default$3()Z
+  > public stringToXml(Ljava/lang/String;)Lscala/xml/NodeSeq;
+  < private final tparam0$1(Lscala/tools/nsc/doc/model/TypeParam;Z)Lscala/xml/NodeSeq;
+  > private final tparam0$1(Lscala/tools/nsc/doc/model/TypeParam;)Ljava/lang/String;
+  > private final tparam0$2(Lscala/tools/nsc/doc/model/TypeParam;Z)Lscala/xml/NodeSeq;
+  < private final tparams0$1(Lscala/collection/immutable/List;Z)Lscala/xml/NodeSeq;
+  > private final tparams0$1(Lscala/collection/immutable/List;)Ljava/lang/String;
+  > private final tparams0$2(Lscala/collection/immutable/List;Z)Lscala/xml/NodeSeq;
+  < private final tparamsToHtml$1(Lscala/collection/immutable/List;Z)Lscala/xml/NodeSeq;
+  > private final tparamsToHtml$1(Lscala/tools/nsc/doc/model/Entity;Z)Lscala/xml/NodeSeq;
+  > public tparamsToString(Lscala/collection/immutable/List;)Ljava/lang/String;
+
+scala/tools/nsc/doc/model/Class.class
+  < public abstract isCaseClass()Z
+  > public abstract valueParams()Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/model/Def.class
+  < public abstract typeParams()Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/model/DocTemplateEntity.class
+  < public abstract findMember(Ljava/lang/String;)Lscala/Option;
+  > public abstract linearizationTemplates()Lscala/collection/immutable/List;
+  > public abstract linearizationTypes()Lscala/collection/immutable/List;
+  < public abstract parentTemplates()Lscala/collection/immutable/List;
+  < public abstract typeParams()Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/model/Entity.class
+  > public abstract universe()Lscala/tools/nsc/doc/Universe;
+
+scala/tools/nsc/doc/model/MemberEntity.class
+  > public abstract isAbstract()Z
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$10.class
+  < public <init>(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/Function0;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/Function0;)V
+  > public hi()Lscala/Option;
+  > public isTypeParam()Z
+  > public isValueParam()Z
+  < public isVar()Z
+  > public lo()Lscala/Option;
+  > public scala$tools$nsc$doc$model$ModelFactory$HigherKindedImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  > public scala$tools$nsc$doc$model$ModelFactory$TypeBoundsImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  > public typeParams()Lscala/collection/immutable/List;
+  > public variance()Ljava/lang/String;
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$11.class
+  > public isLazyVal()Z
+  < public isVal()Z
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$12.class
+  < public alias()Lscala/tools/nsc/doc/model/TypeEntity;
+  < public isAliasType()Z
+  > public isVar()Z
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$13.class
+  < public <init>(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/Function0;)V
+  > public <init>(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/Function0;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public hi()Lscala/Option;
+  < public isTypeParam()Z
+  > public isVal()Z
+  < public isValueParam()Z
+  < public lo()Lscala/Option;
+  < public scala$tools$nsc$doc$model$ModelFactory$TypeBoundsImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  < public variance()Ljava/lang/String;
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$15.class
+  > private checkFunctionType(Lscala/tools/nsc/symtab/Types$TypeRef;)Z
+  > private final gd10$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+  < private final gd4$1(Lscala/tools/nsc/symtab/Types$TypeRef;)Z
+  < private final gd8$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private final gd8$1(Lscala/tools/nsc/symtab/Types$TypeRef;)Z
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$3.class
+  < public isCaseClass()Z
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$5.class
+  < public scala$tools$nsc$doc$model$ModelFactory$$anon$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  < public valueParams()Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$6.class
+  < public scala$tools$nsc$doc$model$ModelFactory$$anon$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  > public scala$tools$nsc$doc$model$ModelFactory$HigherKindedImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$7.class
+  > public hi()Lscala/Option;
+  > public isAbstractType()Z
+  < public isConstructor()Z
+  < public isPrimary()Z
+  > public lo()Lscala/Option;
+  > public scala$tools$nsc$doc$model$ModelFactory$HigherKindedImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  > public scala$tools$nsc$doc$model$ModelFactory$TypeBoundsImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  > public typeParams()Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$8.class
+  > public alias()Lscala/tools/nsc/doc/model/TypeEntity;
+  < public hi()Lscala/Option;
+  < public isAbstractType()Z
+  > public isAliasType()Z
+  < public lo()Lscala/Option;
+  > public scala$tools$nsc$doc$model$ModelFactory$HigherKindedImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  < public scala$tools$nsc$doc$model$ModelFactory$TypeBoundsImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  > public typeParams()Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/model/ModelFactory$$anon$9.class
+  > public isConstructor()Z
+  < public isLazyVal()Z
+  > public isPrimary()Z
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$3.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public final apply(Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$4.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/doc/model/ModelFactory$TemplateImpl;
+  > public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$5.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/collection/immutable/List;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < public scala$tools$nsc$doc$model$ModelFactory$DocTemplateImpl$$anonfun$$$outer()Lscala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl;
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$6.class
+  < public andThen(Lscala/Function1;)Lscala/PartialFunction;
+  < public andThen(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final apply(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/doc/model/TypeEntity;
+  < public apply$mcDD$sp(D)D
+  < public apply$mcDF$sp(F)D
+  < public apply$mcDI$sp(I)D
+  < public apply$mcDL$sp(J)D
+  < public apply$mcFD$sp(D)F
+  < public apply$mcFF$sp(F)F
+  < public apply$mcFI$sp(I)F
+  < public apply$mcFL$sp(J)F
+  < public apply$mcID$sp(D)I
+  < public apply$mcIF$sp(F)I
+  < public apply$mcII$sp(I)I
+  < public apply$mcIL$sp(J)I
+  < public apply$mcLD$sp(D)J
+  < public apply$mcLF$sp(F)J
+  < public apply$mcLI$sp(I)J
+  < public apply$mcLL$sp(J)J
+  < public apply$mcVD$sp(D)V
+  < public apply$mcVF$sp(F)V
+  < public apply$mcVI$sp(I)V
+  < public apply$mcVL$sp(J)V
+  < public apply$mcZD$sp(D)Z
+  < public apply$mcZF$sp(F)Z
+  < public apply$mcZI$sp(I)Z
+  < public apply$mcZL$sp(J)Z
+  < public compose(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final isDefinedAt(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Z
+  < public final isDefinedAt(Ljava/lang/Object;)Z
+  < public lift()Lscala/Function1;
+  < public orElse(Lscala/PartialFunction;)Lscala/PartialFunction;
+  > public scala$tools$nsc$doc$model$ModelFactory$DocTemplateImpl$$anonfun$$$outer()Lscala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl;
+  < public toString()Ljava/lang/String;
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$7.class
+  < public andThen(Lscala/Function1;)Lscala/PartialFunction;
+  < public andThen(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final apply(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/doc/model/ModelFactory$TemplateImpl;
+  < public apply$mcDD$sp(D)D
+  < public apply$mcDF$sp(F)D
+  < public apply$mcDI$sp(I)D
+  < public apply$mcDL$sp(J)D
+  < public apply$mcFD$sp(D)F
+  < public apply$mcFF$sp(F)F
+  < public apply$mcFI$sp(I)F
+  < public apply$mcFL$sp(J)F
+  < public apply$mcID$sp(D)I
+  < public apply$mcIF$sp(F)I
+  < public apply$mcII$sp(I)I
+  < public apply$mcIL$sp(J)I
+  < public apply$mcLD$sp(D)J
+  < public apply$mcLF$sp(F)J
+  < public apply$mcLI$sp(I)J
+  < public apply$mcLL$sp(J)J
+  < public apply$mcVD$sp(D)V
+  < public apply$mcVF$sp(F)V
+  < public apply$mcVI$sp(I)V
+  < public apply$mcVL$sp(J)V
+  < public apply$mcZD$sp(D)Z
+  < public apply$mcZF$sp(F)Z
+  < public apply$mcZI$sp(I)Z
+  < public apply$mcZL$sp(J)Z
+  < public compose(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final isDefinedAt(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Z
+  < public final isDefinedAt(Ljava/lang/Object;)Z
+  < public lift()Lscala/Function1;
+  < public orElse(Lscala/PartialFunction;)Lscala/PartialFunction;
+  < public toString()Ljava/lang/String;
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$8.class
+  < public andThen(Lscala/Function1;)Lscala/PartialFunction;
+  < public andThen(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final apply(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;
+  > public final apply(Lscala/tools/nsc/doc/model/ModelFactory$TemplateImpl;)V
+  < public apply$mcDD$sp(D)D
+  < public apply$mcDF$sp(F)D
+  < public apply$mcDI$sp(I)D
+  < public apply$mcDL$sp(J)D
+  < public apply$mcFD$sp(D)F
+  < public apply$mcFF$sp(F)F
+  < public apply$mcFI$sp(I)F
+  < public apply$mcFL$sp(J)F
+  < public apply$mcID$sp(D)I
+  < public apply$mcIF$sp(F)I
+  < public apply$mcII$sp(I)I
+  < public apply$mcIL$sp(J)I
+  < public apply$mcLD$sp(D)J
+  < public apply$mcLF$sp(F)J
+  < public apply$mcLI$sp(I)J
+  < public apply$mcLL$sp(J)J
+  < public apply$mcVD$sp(D)V
+  < public apply$mcVF$sp(F)V
+  < public apply$mcVI$sp(I)V
+  < public apply$mcVL$sp(J)V
+  < public apply$mcZD$sp(D)Z
+  < public apply$mcZF$sp(F)Z
+  < public apply$mcZI$sp(I)Z
+  < public apply$mcZL$sp(J)Z
+  < public compose(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final isDefinedAt(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Z
+  < public final isDefinedAt(Ljava/lang/Object;)Z
+  < public lift()Lscala/Function1;
+  < public orElse(Lscala/PartialFunction;)Lscala/PartialFunction;
+  < public toString()Ljava/lang/String;
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl$$anonfun$9.class
+  < public andThen(Lscala/Function1;)Lscala/PartialFunction;
+  < public andThen(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final apply(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/collection/immutable/List;
+  < public apply$mcDD$sp(D)D
+  < public apply$mcDF$sp(F)D
+  < public apply$mcDI$sp(I)D
+  < public apply$mcDL$sp(J)D
+  < public apply$mcFD$sp(D)F
+  < public apply$mcFF$sp(F)F
+  < public apply$mcFI$sp(I)F
+  < public apply$mcFL$sp(J)F
+  < public apply$mcID$sp(D)I
+  < public apply$mcIF$sp(F)I
+  < public apply$mcII$sp(I)I
+  < public apply$mcIL$sp(J)I
+  < public apply$mcLD$sp(D)J
+  < public apply$mcLF$sp(F)J
+  < public apply$mcLI$sp(I)J
+  < public apply$mcLL$sp(J)J
+  < public apply$mcVD$sp(D)V
+  < public apply$mcVF$sp(F)V
+  < public apply$mcVI$sp(I)V
+  < public apply$mcVL$sp(J)V
+  < public apply$mcZD$sp(D)Z
+  < public apply$mcZF$sp(F)Z
+  < public apply$mcZI$sp(I)Z
+  < public apply$mcZL$sp(J)Z
+  < public compose(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final isDefinedAt(Lscala/tools/nsc/doc/model/ModelFactory$MemberImpl;)Z
+  < public final isDefinedAt(Ljava/lang/Object;)Z
+  < public lift()Lscala/Function1;
+  < public orElse(Lscala/PartialFunction;)Lscala/PartialFunction;
+  > public scala$tools$nsc$doc$model$ModelFactory$DocTemplateImpl$$anonfun$$$outer()Lscala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl;
+  < public toString()Ljava/lang/String;
+
+scala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl.class
+  < public findMember(Ljava/lang/String;)Lscala/Option;
+  > private final gd1$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public isCaseClass()Z
+  > public linearizationTemplates()Lscala/collection/immutable/List;
+  > public linearizationTypes()Lscala/collection/immutable/List;
+  < public parentTemplates()Lscala/collection/immutable/List;
+  < public registerSubClass(Lscala/tools/nsc/doc/model/DocTemplateEntity;)Lscala/collection/mutable/Buffer;
+  > public registerSubClass(Lscala/tools/nsc/doc/model/DocTemplateEntity;)V
+  > public scala$tools$nsc$doc$model$ModelFactory$HigherKindedImpl$$$outer()Lscala/tools/nsc/doc/model/ModelFactory;
+  > public selfType()Lscala/Option;
+
+scala/tools/nsc/doc/model/ModelFactory$EntityImpl.class
+  > public universe()Lscala/tools/nsc/doc/Universe;
+
+scala/tools/nsc/doc/model/ModelFactory$MemberImpl.class
+  > public isAbstract()Z
+  > private final resultTpe$1(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/doc/model/ModelFactory$NoDocTemplateImpl.class
+  > public isCaseClass()Z
+  > public selfType()Lscala/Option;
+
+scala/tools/nsc/doc/model/ModelFactory$ParameterImpl.class
+  < public inTemplate()Lscala/tools/nsc/doc/model/ModelFactory$DocTemplateImpl;
+  < public inTemplate()Lscala/tools/nsc/doc/model/DocTemplateEntity;
+
+scala/tools/nsc/doc/model/ModelFactory$TemplateImpl$class.class
+  > public static isCaseClass(Lscala/tools/nsc/doc/model/ModelFactory$TemplateImpl;)Z
+  > public static selfType(Lscala/tools/nsc/doc/model/ModelFactory$TemplateImpl;)Lscala/Option;
+
+scala/tools/nsc/doc/model/ModelFactory$TemplateImpl.class
+  > public abstract isCaseClass()Z
+  > public abstract selfType()Lscala/Option;
+
+scala/tools/nsc/doc/model/ModelFactory$TypeBoundsImpl$class.class
+  < private static final gd1$1(Lscala/tools/nsc/doc/model/ModelFactory$TypeBoundsImpl;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private static final gd3$1(Lscala/tools/nsc/doc/model/ModelFactory$TypeBoundsImpl;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/doc/model/ModelFactory.class
+  < private final gd3$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final gd4$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final hasMembers$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public isEmptyJavaObject(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < public makeType(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/doc/model/TypeEntity;
+  > public makeType(Lscala/tools/nsc/symtab/Types$Type;Lscala/Function0;)Lscala/tools/nsc/doc/model/TypeEntity;
+  > private final ownerTpl$2(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public final scala$tools$nsc$doc$model$ModelFactory$$universe()Lscala/tools/nsc/doc/Universe;
+  > public final scala$tools$nsc$doc$model$ModelFactory$$universe_$eq(Lscala/tools/nsc/doc/Universe;)V
+
+scala/tools/nsc/doc/model/ParameterEntity.class
+  < public abstract inTemplate()Lscala/tools/nsc/doc/model/DocTemplateEntity;
+
+scala/tools/nsc/doc/model/TemplateEntity.class
+  > public abstract isCaseClass()Z
+  > public abstract selfType()Lscala/Option;
+
+scala/tools/nsc/doc/model/Trait.class
+  < public abstract valueParams()Lscala/collection/immutable/List;
+
+scala/tools/nsc/doc/model/comment/Comment.class
+  > public abstract constructor()Lscala/Option;
+  < public abstract short()Lscala/tools/nsc/doc/model/comment/Inline;
+  > public short()Lscala/tools/nsc/doc/model/comment/Inline;
+  > public abstract source()Lscala/Option;
+
+scala/tools/nsc/doc/model/comment/CommentFactory$$anon$1.class
+  < public <init>(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/util/Position;Ljava/lang/String;Lscala/collection/mutable/Map;)V
+  > public <init>(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/Map;Lscala/collection/Map;Lscala/collection/Map;Lscala/Option;Lscala/Option;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/Option;)V
+  > public constructor()Lscala/Option;
+  < public short()Lscala/tools/nsc/doc/model/comment/Inline;
+  > public source()Lscala/Option;
+
+scala/tools/nsc/doc/model/comment/CommentFactory$$anonfun$14.class
+  < public final apply(Ljava/lang/String;)Ljava/lang/String;
+  > public final apply(Lscala/util/matching/Regex$Match;)Ljava/lang/String;
+
+scala/tools/nsc/doc/model/comment/CommentFactory$WikiParser$$anonfun$21.class
+  < public final apply(Lscala/collection/Seq;)Lscala/tools/nsc/doc/model/comment/UnorderedList;
+  > public final apply(Lscala/collection/Seq;)Lscala/tools/nsc/doc/model/comment/OrderedList;
+
+scala/tools/nsc/doc/model/comment/CommentFactory$WikiParser$$anonfun$26.class
+  < public final apply(Lscala/collection/Seq;)Lscala/tools/nsc/doc/model/comment/OrderedList;
+  > public final apply(Ljava/lang/String;)Z
+
+scala/tools/nsc/doc/model/comment/CommentFactory$WikiParser$$anonfun$27.class
+  < public final apply(Ljava/lang/String;)Z
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Ljava/lang/String;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/doc/model/comment/CommentFactory$class.class
+  < public static final allSymsOneTag$1(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/doc/model/comment/CommentFactory$TagKey;Lscala/tools/nsc/util/Position;Lscala/collection/mutable/Map;)Lscala/collection/Map;
+  > private static final allSymsOneTag$1(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/doc/model/comment/CommentFactory$TagKey;Lscala/tools/nsc/util/Position;Lscala/collection/mutable/Map;)Lscala/collection/Map;
+  < public static final allTags$1(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/doc/model/comment/CommentFactory$SimpleTagKey;Lscala/collection/mutable/Map;)Lscala/collection/immutable/List;
+  > private static final allTags$1(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/doc/model/comment/CommentFactory$SimpleTagKey;Lscala/collection/mutable/Map;)Lscala/collection/immutable/List;
+  > private static final clean$1(Lscala/tools/nsc/doc/model/ModelFactory;Ljava/lang/String;)Lscala/collection/immutable/List;
+  > public static createComment(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/Map;Lscala/collection/Map;Lscala/collection/Map;Lscala/Option;Lscala/Option;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/Option;)Lscala/tools/nsc/doc/model/comment/Comment;
+  > public static createComment$default$1(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/Option;
+  > public static createComment$default$10(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/immutable/List;
+  > public static createComment$default$11(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/Option;
+  > public static createComment$default$12(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/immutable/List;
+  > public static createComment$default$13(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/immutable/List;
+  > public static createComment$default$14(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/Option;
+  > public static createComment$default$15(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/Option;
+  > public static createComment$default$2(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/immutable/List;
+  > public static createComment$default$3(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/immutable/List;
+  > public static createComment$default$4(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/Option;
+  > public static createComment$default$5(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/Map;
+  > public static createComment$default$6(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/Map;
+  > public static createComment$default$7(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/collection/Map;
+  > public static createComment$default$8(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/Option;
+  > public static createComment$default$9(Lscala/tools/nsc/doc/model/ModelFactory;)Lscala/Option;
+  > public static defineComment(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/Function0;)Lscala/Option;
+  > public static javadocReplacement(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/util/matching/Regex$Match;)Ljava/lang/String;
+  < public static final oneTag$1(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/doc/model/comment/CommentFactory$SimpleTagKey;Lscala/tools/nsc/util/Position;Lscala/collection/mutable/Map;)Lscala/Option;
+  > private static final oneTag$1(Lscala/tools/nsc/doc/model/ModelFactory;Lscala/tools/nsc/doc/model/comment/CommentFactory$SimpleTagKey;Lscala/tools/nsc/util/Position;Lscala/collection/mutable/Map;)Lscala/Option;
+  < public static parse(Lscala/tools/nsc/doc/model/ModelFactory;Ljava/lang/String;Lscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+  > public static parse(Lscala/tools/nsc/doc/model/ModelFactory;Ljava/lang/String;Ljava/lang/String;Lscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+  < private static final parse0$1(Lscala/tools/nsc/doc/model/ModelFactory;Ljava/lang/String;Lscala/collection/Map;Lscala/Option;Lscala/collection/immutable/List;ZLscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+  > private static final parse0$1(Lscala/tools/nsc/doc/model/ModelFactory;Ljava/lang/String;Lscala/collection/Map;Lscala/Option;Lscala/collection/immutable/List;ZLjava/lang/String;Lscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+
+scala/tools/nsc/doc/model/comment/CommentFactory.class
+  > public abstract JavadocTags()Lscala/util/matching/Regex;
+  > public abstract commentCache()Lscala/collection/mutable/HashMap;
+  > public abstract createComment(Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/Map;Lscala/collection/Map;Lscala/collection/Map;Lscala/Option;Lscala/Option;Lscala/collection/immutable/List;Lscala/Option;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/Option;Lscala/Option;)Lscala/tools/nsc/doc/model/comment/Comment;
+  > public abstract createComment$default$1()Lscala/Option;
+  > public abstract createComment$default$10()Lscala/collection/immutable/List;
+  > public abstract createComment$default$11()Lscala/Option;
+  > public abstract createComment$default$12()Lscala/collection/immutable/List;
+  > public abstract createComment$default$13()Lscala/collection/immutable/List;
+  > public abstract createComment$default$14()Lscala/Option;
+  > public abstract createComment$default$15()Lscala/Option;
+  > public abstract createComment$default$2()Lscala/collection/immutable/List;
+  > public abstract createComment$default$3()Lscala/collection/immutable/List;
+  > public abstract createComment$default$4()Lscala/Option;
+  > public abstract createComment$default$5()Lscala/collection/Map;
+  > public abstract createComment$default$6()Lscala/collection/Map;
+  > public abstract createComment$default$7()Lscala/collection/Map;
+  > public abstract createComment$default$8()Lscala/Option;
+  > public abstract createComment$default$9()Lscala/Option;
+  > public abstract defineComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/Function0;)Lscala/Option;
+  > public abstract javadocReplacement(Lscala/util/matching/Regex$Match;)Ljava/lang/String;
+  < public abstract parse(Ljava/lang/String;Lscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+  > public abstract parse(Ljava/lang/String;Ljava/lang/String;Lscala/tools/nsc/util/Position;)Lscala/tools/nsc/doc/model/comment/Comment;
+  < public abstract scala$tools$nsc$doc$model$comment$CommentFactory$$commentCache()Lscala/collection/mutable/HashMap;
+  > public abstract scala$tools$nsc$doc$model$comment$CommentFactory$_setter_$JavadocTags_$eq(Lscala/util/matching/Regex;)V
+  > public abstract scala$tools$nsc$doc$model$comment$CommentFactory$_setter_$commentCache_$eq(Lscala/collection/mutable/HashMap;)V
+  < public abstract scala$tools$nsc$doc$model$comment$CommentFactory$_setter_$scala$tools$nsc$doc$model$comment$CommentFactory$$commentCache_$eq(Lscala/collection/mutable/HashMap;)V
+
+scala/tools/nsc/interactive/RefinedBuildManager.class
+  < private final SymWithHistory()Lscala/tools/nsc/interactive/RefinedBuildManager$SymWithHistory$;
+  > public final scala$tools$nsc$interactive$RefinedBuildManager$$SymWithHistory()Lscala/tools/nsc/interactive/RefinedBuildManager$SymWithHistory$;
+
+scala/tools/nsc/javac/JavaScanners$AbstractJavaScanner.class
+  < public abstract flushDoc()Ljava/lang/String;
+  > public abstract flushDoc()Lscala/tools/nsc/ast/DocComments$DocComment;
+
+scala/tools/nsc/javac/JavaScanners$JavaScanner.class
+  < public flushDoc()Ljava/lang/String;
+  > public flushDoc()Lscala/tools/nsc/ast/DocComments$DocComment;
+
+scala/tools/nsc/matching/MatrixAdditions$MatrixExhaustiveness$ExhaustivenessChecker.class
+  < private final Combo()Lscala/tools/nsc/matching/MatrixAdditions$MatrixExhaustiveness$ExhaustivenessChecker$Combo$;
+  > public final scala$tools$nsc$matching$MatrixAdditions$MatrixExhaustiveness$ExhaustivenessChecker$$Combo()Lscala/tools/nsc/matching/MatrixAdditions$MatrixExhaustiveness$ExhaustivenessChecker$Combo$;
+
+scala/tools/nsc/symtab/AnnotationInfos$AnnotationInfo.class
+  > public intArg(I)Lscala/Option;
+  > public stringArg(I)Lscala/Option;
+
+scala/tools/nsc/symtab/BaseTypeSeqs$BaseTypeSeq.class
+  < public pending()Lscala/collection/immutable/Map;
+  > public pending()Lscala/collection/mutable/BitSet;
+  < public pending_$eq(Lscala/collection/immutable/Map;)V
+  < private final tsym$1(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/symtab/Definitions$definitions$.class
+  > public ImplicitNotFoundClass()Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public methodClass_setAccessible()Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/symtab/StdNames$nme$.class
+  > public setAccessible()Lscala/tools/nsc/symtab/Names$Name;
+
+scala/tools/nsc/symtab/SymbolTable.class
+  > public final TypeTreeWithDeferredRefCheck()Lscala/tools/nsc/ast/Trees$TypeTreeWithDeferredRefCheck$;
+  > public checkKindBounds0(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;Z)Lscala/collection/immutable/List;
+  < public cookedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  > public cookedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;)Ljava/lang/String;
+  > public cookedDocComment$default$2()Ljava/lang/String;
+  > public docComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;Lscala/tools/nsc/util/Position;)Ljava/lang/Object;
+  > public docComment$default$3()Lscala/tools/nsc/util/Position;
+  > public expandVariables(Ljava/lang/String;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  < public expandedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/String;
+  > public expandedDocComment(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Ljava/lang/String;)Ljava/lang/String;
+  > public expandedDocComment$default$3()Ljava/lang/String;
+  < public intersectionWitness_$eq(Lscala/collection/mutable/WeakHashMap;)V
+  > public kindsConform(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public scala$tools$nsc$symtab$Types$_setter_$intersectionWitness_$eq(Lscala/collection/mutable/WeakHashMap;)V
+  > public superComment(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/Option;
+
+scala/tools/nsc/symtab/Symbols$Symbol$$anonfun$deprecationMessage$1.class
+  < public andThen(Lscala/Function1;)Lscala/PartialFunction;
+  < public andThen(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Ljava/lang/String;
+  > public final apply(Lscala/tools/nsc/symtab/AnnotationInfos$AnnotationInfo;)Lscala/Option;
+  < public apply$mcDD$sp(D)D
+  < public apply$mcDF$sp(F)D
+  < public apply$mcDI$sp(I)D
+  < public apply$mcDL$sp(J)D
+  < public apply$mcFD$sp(D)F
+  < public apply$mcFF$sp(F)F
+  < public apply$mcFI$sp(I)F
+  < public apply$mcFL$sp(J)F
+  < public apply$mcID$sp(D)I
+  < public apply$mcIF$sp(F)I
+  < public apply$mcII$sp(I)I
+  < public apply$mcIL$sp(J)I
+  < public apply$mcLD$sp(D)J
+  < public apply$mcLF$sp(F)J
+  < public apply$mcLI$sp(I)J
+  < public apply$mcLL$sp(J)J
+  < public apply$mcVD$sp(D)V
+  < public apply$mcVF$sp(F)V
+  < public apply$mcVI$sp(I)V
+  < public apply$mcVL$sp(J)V
+  < public apply$mcZD$sp(D)Z
+  < public apply$mcZF$sp(F)Z
+  < public apply$mcZI$sp(I)Z
+  < public apply$mcZL$sp(J)Z
+  < public compose(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final isDefinedAt(Lscala/reflect/generic/Trees$Tree;)Z
+  < public final isDefinedAt(Ljava/lang/Object;)Z
+  < public lift()Lscala/Function1;
+  < public orElse(Lscala/PartialFunction;)Lscala/PartialFunction;
+  < public toString()Ljava/lang/String;
+
+scala/tools/nsc/symtab/Symbols$Symbol$$anonfun$elisionLevel$1.class
+  < public andThen(Lscala/Function1;)Lscala/PartialFunction;
+  < public andThen(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)I
+  > public final apply(Lscala/tools/nsc/symtab/AnnotationInfos$AnnotationInfo;)Lscala/Option;
+  < public apply$mcDD$sp(D)D
+  < public apply$mcDF$sp(F)D
+  < public apply$mcDI$sp(I)D
+  < public apply$mcDL$sp(J)D
+  < public apply$mcFD$sp(D)F
+  < public apply$mcFF$sp(F)F
+  < public apply$mcFI$sp(I)F
+  < public apply$mcFL$sp(J)F
+  < public apply$mcID$sp(D)I
+  < public apply$mcIF$sp(F)I
+  < public apply$mcII$sp(I)I
+  < public apply$mcIL$sp(J)I
+  < public apply$mcLD$sp(D)J
+  < public apply$mcLF$sp(F)J
+  < public apply$mcLI$sp(I)J
+  < public apply$mcLL$sp(J)J
+  < public apply$mcVD$sp(D)V
+  < public apply$mcVF$sp(F)V
+  < public apply$mcVI$sp(I)V
+  < public apply$mcVL$sp(J)V
+  < public apply$mcZD$sp(D)Z
+  < public apply$mcZF$sp(F)Z
+  < public apply$mcZI$sp(I)Z
+  < public apply$mcZL$sp(J)Z
+  < public compose(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final isDefinedAt(Lscala/reflect/generic/Trees$Tree;)Z
+  < public final isDefinedAt(Ljava/lang/Object;)Z
+  < public lift()Lscala/Function1;
+  < public orElse(Lscala/PartialFunction;)Lscala/PartialFunction;
+  < public toString()Ljava/lang/String;
+
+scala/tools/nsc/symtab/Symbols$Symbol$$anonfun$migrationMessage$1.class
+  < public andThen(Lscala/Function1;)Lscala/PartialFunction;
+  < public andThen(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public andThen$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Ljava/lang/String;
+  > public final apply(Lscala/tools/nsc/symtab/AnnotationInfos$AnnotationInfo;)Lscala/Option;
+  < public apply$mcDD$sp(D)D
+  < public apply$mcDF$sp(F)D
+  < public apply$mcDI$sp(I)D
+  < public apply$mcDL$sp(J)D
+  < public apply$mcFD$sp(D)F
+  < public apply$mcFF$sp(F)F
+  < public apply$mcFI$sp(I)F
+  < public apply$mcFL$sp(J)F
+  < public apply$mcID$sp(D)I
+  < public apply$mcIF$sp(F)I
+  < public apply$mcII$sp(I)I
+  < public apply$mcIL$sp(J)I
+  < public apply$mcLD$sp(D)J
+  < public apply$mcLF$sp(F)J
+  < public apply$mcLI$sp(I)J
+  < public apply$mcLL$sp(J)J
+  < public apply$mcVD$sp(D)V
+  < public apply$mcVF$sp(F)V
+  < public apply$mcVI$sp(I)V
+  < public apply$mcVL$sp(J)V
+  < public apply$mcZD$sp(D)Z
+  < public apply$mcZF$sp(F)Z
+  < public apply$mcZI$sp(I)Z
+  < public apply$mcZL$sp(J)Z
+  < public compose(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcDL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcFL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcID$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcII$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcIL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcLL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcVL$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZD$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZF$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZI$sp(Lscala/Function1;)Lscala/Function1;
+  < public compose$mcZL$sp(Lscala/Function1;)Lscala/Function1;
+  < public final isDefinedAt(Lscala/reflect/generic/Trees$Tree;)Z
+  < public final isDefinedAt(Ljava/lang/Object;)Z
+  < public lift()Lscala/Function1;
+  < public orElse(Lscala/PartialFunction;)Lscala/PartialFunction;
+  < public toString()Ljava/lang/String;
+
+scala/tools/nsc/symtab/Symbols$Symbol.class
+  < private getAnnotationArg(Lscala/tools/nsc/symtab/Symbols$Symbol;I)Lscala/Option;
+  > public implicitNotFoundMsg()Lscala/Option;
+
+scala/tools/nsc/symtab/Types$TypeVar.class
+  > private final unifyHK$1(Lscala/tools/nsc/symtab/Types$Type;ZZ)Z
+
+scala/tools/nsc/symtab/Types$class.class
+  > public static final arityMismatches$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/collection/Iterable;ZLscala/collection/mutable/ListBuffer;)V
+  > public static final bindHKParams$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/immutable/List;Lscala/collection/immutable/List;)Lscala/tools/nsc/symtab/Types$Type;
+  > public static checkKindBounds0(Lscala/tools/nsc/symtab/SymbolTable;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;Z)Lscala/collection/immutable/List;
+  > public static final checkKindBoundsHK$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;ZLscala/runtime/BooleanRef;)Lscala/Tuple3;
+  > public static kindsConform(Lscala/tools/nsc/symtab/SymbolTable;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public static final stricterBound$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;ZLscala/runtime/BooleanRef;Lscala/collection/mutable/ListBuffer;)V
+  > public static final stricterBounds$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/collection/Iterable;ZLscala/collection/mutable/ListBuffer;)V
+  > public static final transform$2(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+  > public static final transformedBounds$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+  > public static final varianceMismatch$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;ZLscala/runtime/BooleanRef;Lscala/collection/mutable/ListBuffer;)V
+  > public static final varianceMismatches$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/collection/Iterable;ZLscala/collection/mutable/ListBuffer;)V
+  > public static final variancesMatch$1(Lscala/tools/nsc/symtab/SymbolTable;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/symtab/Types.class
+  > public abstract checkKindBounds0(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;Z)Lscala/collection/immutable/List;
+  < public abstract intersectionWitness_$eq(Lscala/collection/mutable/WeakHashMap;)V
+  > public abstract kindsConform(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public abstract scala$tools$nsc$symtab$Types$_setter_$intersectionWitness_$eq(Lscala/collection/mutable/WeakHashMap;)V
+
+scala/tools/nsc/symtab/classfile/ClassfileParser$ConstantPool$$anonfun$getBytes$1.class
+  < public final apply(I)V
+  > public final apply(I)Lscala/collection/mutable/ArrayBuffer;
+  < public apply$mcVI$sp(I)V
+
+scala/tools/nsc/transform/CleanUp$CleanUpTransformer$$anonfun$2.class
+  < public <init>(Lscala/tools/nsc/transform/CleanUp$CleanUpTransformer;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/Map;Lscala/collection/immutable/Map;Lscala/collection/immutable/Map;)V
+  > public <init>(Lscala/tools/nsc/transform/CleanUp$CleanUpTransformer;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/collection/Map;Lscala/collection/Map;Lscala/collection/Map;)V
+
+scala/tools/nsc/transform/CleanUp$CleanUpTransformer$$anonfun$4.class
+  < public <init>(Lscala/tools/nsc/transform/CleanUp$CleanUpTransformer;Lscala/reflect/generic/Trees$Tree;)V
+  > public <init>(Lscala/tools/nsc/transform/CleanUp$CleanUpTransformer;Lscala/tools/nsc/symtab/Symbols$TermSymbol;)V
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/reflect/generic/Trees$Tree;
+  > public final apply(Lscala/reflect/generic/Trees$CaseDef;)Lscala/reflect/generic/Trees$CaseDef;
+  < private final gd7$1(Lscala/reflect/generic/Trees$DefDef;Lscala/reflect/generic/Trees$Modifiers;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;)Z
+
+scala/tools/nsc/transform/CleanUp$CleanUpTransformer$$anonfun$getSymbolStaticField$1.class
+  < public final apply()Lscala/Tuple3;
+  > public final apply()Lscala/tools/nsc/symtab/Symbols$TermSymbol;
+
+scala/tools/nsc/transform/CleanUp$CleanUpTransformer.class
+  > private addStaticInits(Lscala/reflect/generic/Trees$Template;)Lscala/reflect/generic/Trees$Template;
+  < public applySymbolFieldInitsToStaticCtor(Lscala/reflect/generic/Trees$Template;)Lscala/reflect/generic/Trees$Template;
+  < private classConstantMeth()Lscala/collection/mutable/HashMap;
+  < public findStaticCtor(Lscala/reflect/generic/Trees$Template;)Lscala/Option;
+  > private findStaticCtor(Lscala/reflect/generic/Trees$Template;)Lscala/Option;
+  < private flushSymbolFieldsInitializations()Lscala/collection/immutable/List;
+  > private final gd7$1(Lscala/reflect/generic/Constants$Constant;)Z
+  < private final gd8$1(Lscala/reflect/generic/Constants$Constant;)Z
+  > private final gd8$1(Lscala/reflect/generic/Trees$Try;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;)Z
+  < private final gd9$1(Lscala/reflect/generic/Trees$Try;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;)Z
+  < private getSymbolStaticField(Lscala/tools/nsc/util/Position;Ljava/lang/String;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;)Lscala/Tuple3;
+  > private getSymbolStaticField(Lscala/tools/nsc/util/Position;Ljava/lang/String;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  < public final scala$tools$nsc$transform$CleanUp$CleanUpTransformer$$newDefs()Lscala/collection/mutable/ListBuffer;
+  < public final scala$tools$nsc$transform$CleanUp$CleanUpTransformer$$newInits()Lscala/collection/mutable/ListBuffer;
+  > public final scala$tools$nsc$transform$CleanUp$CleanUpTransformer$$newStaticInits()Lscala/collection/mutable/Buffer;
+  > public final scala$tools$nsc$transform$CleanUp$CleanUpTransformer$$newStaticMembers()Lscala/collection/mutable/Buffer;
+  < private symbolStaticFields()Lscala/collection/mutable/HashMap;
+  > private symbolsStoredAsStatic()Lscala/collection/mutable/Map;
+
+scala/tools/nsc/transform/Erasure$Eraser.class
+  < private final gd4$1(Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;)Z
+  > private final gd4$1(Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;)Z
+  < private final gd5$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;)Z
+  > private final gd5$1(Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;)Z
+  > private final gd6$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;)Z
+
+scala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3.class
+  < private final LoopControl$1(Lscala/runtime/ObjectRef;)Lscala/tools/nsc/transform/Erasure$ErasureTransformer$$anon$3$LoopControl$3$;
+  < private final gd10$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Scopes$Scope;)Z
+  > private final gd10$1(Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;)Z
+  < private final gd11$1(Lscala/reflect/generic/Constants$Constant;)Z
+  > private final gd11$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Scopes$Scope;)Z
+  > private final gd12$1(Lscala/reflect/generic/Constants$Constant;)Z
+  < private final gd13$1(ILjava/lang/AssertionError;)Z
+  < private final gd6$1(Lscala/reflect/generic/Trees$TypeApply;Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;)Z
+  < private final gd7$1(Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)Z
+  > private final gd7$1(Lscala/reflect/generic/Trees$TypeApply;Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;)Z
+  < private final gd8$1(Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;)Z
+  > private final gd8$1(Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)Z
+  < private final gd9$1(Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;)Z
+  > private final gd9$1(Lscala/reflect/generic/Trees$Select;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;)Z
+  > public preErase(Lscala/reflect/generic/Trees$Tree;)Lscala/reflect/generic/Trees$Tree;
+
+scala/tools/nsc/transform/Erasure.class
+  > public final ImplicitNotFoundMsg()Lscala/tools/nsc/typechecker/Implicits$ImplicitNotFoundMsg$;
+  > public companionClassOf(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public companionModuleDef$default$2()Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;I)Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;IZ)Lscala/collection/immutable/List;
+  > public formalTypes(Lscala/collection/immutable/List;IZZ)Lscala/collection/immutable/List;
+  > public formalTypes$default$3()Z
+  > public formalTypes$default$4()Z
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$14.class
+  < public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;)V
+  < public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/collection/immutable/List;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$Type;
+  < public scala$tools$nsc$transform$Mixin$MixinTransformer$$anonfun$$$outer()Lscala/tools/nsc/transform/Mixin$MixinTransformer;
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$15.class
+  < public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/reflect/generic/Trees$Tree;)V
+  > public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/ast/Trees$TypeTree;
+  > public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/collection/immutable/List;
+  > public scala$tools$nsc$transform$Mixin$MixinTransformer$$anonfun$$$outer()Lscala/tools/nsc/transform/Mixin$MixinTransformer;
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$16.class
+  < public final apply()Lscala/reflect/generic/Trees$Tree;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/ast/Trees$TypeTree;
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$4.class
+  < public final apply(Lscala/reflect/generic/Trees$ValDef;)Lscala/reflect/generic/Trees$Ident;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$5.class
+  < public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/reflect/generic/Trees$Tree;)V
+  > public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;)V
+  < public final apply()Lscala/reflect/generic/Trees$Tree;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/reflect/generic/Trees$ValDef;)Lscala/reflect/generic/Trees$Ident;
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$6.class
+  < public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;)V
+  > public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/reflect/generic/Trees$Tree;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)I
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/reflect/generic/Trees$Tree;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$7.class
+  < public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/reflect/generic/Trees$Tree;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)I
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$8.class
+  < public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;)V
+  > public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/Tuple2;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/reflect/generic/Trees$Tree;
+
+scala/tools/nsc/transform/Mixin$MixinTransformer$$anonfun$9.class
+  < public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/mutable/ListBuffer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/transform/Mixin$MixinTransformer;)V
+  < public final apply(Lscala/Tuple2;)Lscala/reflect/generic/Trees$Tree;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/Tuple2;
+  < private final gd5$1(Lscala/reflect/generic/Trees$Modifiers;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < private final gd6$1(Lscala/reflect/generic/Trees$Modifiers;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < private final gd7$1(Lscala/reflect/generic/Trees$Modifiers;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < public scala$tools$nsc$transform$Mixin$MixinTransformer$$anonfun$$$outer()Lscala/tools/nsc/transform/Mixin$MixinTransformer;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$22.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/collection/immutable/Map;)V
+  < public final apply(Lscala/Tuple2;)Lscala/reflect/generic/Trees$Tree;
+  > public final apply(Lscala/Tuple2;)Z
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$23.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/Map;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public final apply(Lscala/Tuple2;)Lscala/reflect/generic/Trees$Tree;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$26.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/collection/immutable/List;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/tools/nsc/typechecker/Typers$Typer;)V
+  < public final apply(Lscala/Tuple2;)Lscala/tools/nsc/ast/Trees$TypeTree;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/reflect/generic/Trees$Tree;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$27.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/collection/immutable/List;)V
+  < public final apply()Lscala/reflect/generic/Trees$Tree;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/Tuple2;)Lscala/tools/nsc/ast/Trees$TypeTree;
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$28.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)V
+  < public final apply(Lscala/collection/immutable/List;)Lscala/reflect/generic/Trees$Tree;
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/reflect/generic/Trees$Tree;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$29.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public final apply(Lscala/reflect/generic/Trees$TypeDef;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public final apply(Lscala/collection/immutable/List;)Lscala/reflect/generic/Trees$Tree;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$30.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/collection/Set;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public final apply(Lscala/reflect/generic/Trees$TypeDef;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$31.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/collection/Set;)V
+  < public final apply(Lscala/reflect/generic/Trees$ValDef;)Lscala/Tuple2;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$32.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;)V
+  < public final apply(Lscala/Tuple2;)Lscala/reflect/generic/Trees$ValDef;
+  > public final apply(Lscala/reflect/generic/Trees$ValDef;)Lscala/Tuple2;
+
+scala/tools/nsc/transform/SpecializeTypes$$anon$6$$anonfun$33.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes$$anon$6;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V
+  < public final apply(Lscala/reflect/generic/Trees$ValDef;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public final apply(Lscala/Tuple2;)Lscala/reflect/generic/Trees$ValDef;
+
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$13.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes;Lscala/collection/immutable/List;)V
+  < public final apply(Lscala/collection/immutable/Map;)Z
+  > public final apply(Ljava/lang/Object;)Z
+
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$14.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/Map;Lscala/runtime/ObjectRef;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public final apply(Lscala/collection/immutable/Map;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public final apply(Lscala/collection/immutable/Map;)Z
+
+scala/tools/nsc/transform/SpecializeTypes$$anonfun$19.class
+  < public <init>(Lscala/tools/nsc/transform/SpecializeTypes;)V
+  > public <init>(Lscala/tools/nsc/transform/SpecializeTypes;Lscala/collection/immutable/List;)V
+  < public final apply(Lscala/tools/nsc/util/Position;Ljava/lang/String;)V
+  < public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/collection/immutable/List;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/transform/SpecializeTypes.class
+  > public final scala$tools$nsc$transform$SpecializeTypes$$forwardCtorCall(Lscala/tools/nsc/util/Position;Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;)Lscala/reflect/generic/Trees$Tree;
+
+scala/tools/nsc/transform/TypingTransformers$TypingTransformer.class
+  < public typers_$eq(Lscala/collection/mutable/Map;)V
+
+scala/tools/nsc/transform/UnCurry$$anon$3$$anonfun$mapOverArgs$1.class
+  < private final gd1$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final gd2$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/transform/UnCurry$$anon$3.class
+  > private final gd1$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/transform/UnCurry$UnCurryTransformer$$anonfun$postTransform$1.class
+  > private final gd10$1(Lscala/reflect/generic/Trees$Tree;)Z
+  < private final gd7$1(Lscala/reflect/generic/Trees$Tree;)Z
+
+scala/tools/nsc/transform/UnCurry$UnCurryTransformer.class
+  < private final gd2$1(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+  < private final gd3$1(Lscala/reflect/generic/Trees$Tree;)Z
+  > private final gd3$1(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+  < private final gd5$1(Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private final gd5$1(Lscala/reflect/generic/Trees$Tree;)Z
+  < private final gd6$1(Lscala/reflect/generic/Trees$Tree;)Z
+  > private final gd6$1(Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private final gd7$1(Lscala/reflect/generic/Trees$Tree;)Z
+
+scala/tools/nsc/typechecker/Contexts$Context.class
+  > private final abEnclosesStopAtPkg$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < private final accessWithin$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final accessWithin$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final accessWithinLinked$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/Duplicators.class
+  > public final ImplicitNotFoundMsg()Lscala/tools/nsc/typechecker/Implicits$ImplicitNotFoundMsg$;
+  > public companionClassOf(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public companionModuleDef$default$2()Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;I)Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;IZ)Lscala/collection/immutable/List;
+  > public formalTypes(Lscala/collection/immutable/List;IZZ)Lscala/collection/immutable/List;
+  > public formalTypes$default$3()Z
+  > public formalTypes$default$4()Z
+
+scala/tools/nsc/typechecker/Implicits$$anonfun$inferImplicit$1.class
+  < public <init>(Lscala/tools/nsc/typechecker/Analyzer;Lscala/tools/nsc/typechecker/Implicits$SearchResult;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Analyzer;Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Types$Type;Z)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Ljava/lang/String;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch$$anonfun$2.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeVar;
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Ljava/lang/String;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch$$anonfun$3.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)I
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeVar;
+
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch$$anonfun$4.class
+  < public final apply(Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;)Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;
+  < public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)I
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch$$anonfun$5.class
+  < public <init>(Lscala/tools/nsc/typechecker/Implicits$ImplicitSearch;Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Implicits$ImplicitSearch;)V
+  < public final apply(Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;)Z
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply(Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;)Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;
+  > public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch$$anonfun$6.class
+  < public <init>(Lscala/tools/nsc/typechecker/Implicits$ImplicitSearch;Z)V
+  > public <init>(Lscala/tools/nsc/typechecker/Implicits$ImplicitSearch;Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;)V
+  < public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/reflect/generic/Trees$Tree;
+  > public final apply(Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;)Z
+
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch$$anonfun$typedImplicit0$1.class
+  < public <init>(Lscala/tools/nsc/typechecker/Implicits$ImplicitSearch;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Implicits$ImplicitSearch;Lscala/tools/nsc/typechecker/Implicits$ImplicitInfo;)V
+  < public final apply(Lscala/tools/nsc/symtab/Types$TypeVar;)Lscala/tools/nsc/symtab/Types$TypeConstraint;
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Ljava/lang/String;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Implicits$ImplicitSearch.class
+  > public static <clinit>()V
+  < private depoly(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+  < private final gd4$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final gd4$1(Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private final gd5$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < private final isStable$1(Lscala/tools/nsc/symtab/Types$Type;)Z
+  > public final isStable$1(Lscala/tools/nsc/symtab/Types$Type;)Z
+  < private final matchesPt$1(Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/immutable/List;)Z
+  > public final matchesPt$1(Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/immutable/List;)Z
+  > public final scala$tools$nsc$typechecker$Implicits$ImplicitSearch$$depoly(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/Implicits.class
+  > public abstract ImplicitNotFoundMsg()Lscala/tools/nsc/typechecker/Implicits$ImplicitNotFoundMsg$;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$13.class
+  < public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/collection/immutable/List;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$Type;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)I
+  < private final gd6$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$14.class
+  < public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$15.class
+  < public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/collection/immutable/List;[ILscala/runtime/BooleanRef;Lscala/runtime/BooleanRef;Lscala/runtime/IntRef;)V
+  < public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/Option;
+  > public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$17.class
+  > private final gd6$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$18.class
+  < public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeBounds;
+  > public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$19.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$Type;
+  > public final apply(Lscala/tools/nsc/symtab/Types$Type;)Lscala/Option;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$20.class
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/Types$Type;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$NamedType;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$21.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeVar;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$22.class
+  < public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/tools/nsc/symtab/Types$Type;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)I
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeBounds;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$23.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$WildcardType$;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$24.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeVar;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$25.class
+  < public final apply(Lscala/tools/nsc/symtab/Types$TypeVar;)Lscala/tools/nsc/symtab/Types$TypeVar;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeVar;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$26.class
+  < public final apply(Lscala/tools/nsc/symtab/Types$Type;)Z
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)I
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$27.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeVar;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$WildcardType$;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$29.class
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeVar;
+  > public final apply(Lscala/tools/nsc/symtab/Types$TypeVar;)Lscala/tools/nsc/symtab/Types$TypeVar;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$adjustTypeArgs$1.class
+  < public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/mutable/ListBuffer;Lscala/collection/mutable/ListBuffer;Lscala/collection/mutable/ListBuffer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/tools/nsc/symtab/Types$Type;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Lscala/collection/mutable/ListBuffer;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Lscala/Tuple2;
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$check$1$1.class
+  > private final gd11$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < private final gd12$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$checkKindBounds$1.class
+  < public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/mutable/ListBuffer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer;Lscala/collection/mutable/ListBuffer;)V
+  < public final apply(Lscala/Tuple2;)Ljava/lang/Object;
+  > public final apply(Lscala/Tuple5;)Lscala/collection/mutable/ListBuffer;
+  < private final gd9$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1$$anonfun$37.class
+  < public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Infer$Inferencer$$anonfun$inferMethodAlternative$1;)V
+
+scala/tools/nsc/typechecker/Infer$Inferencer$approximateAbstracts$.class
+  > private final gd12$1(Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < private final gd13$1(Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/Infer$Inferencer.class
+  > public final AdjustedTypeArgs()Lscala/tools/nsc/typechecker/Infer$Inferencer$AdjustedTypeArgs$;
+  < public adjustTypeArgs(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Lscala/Tuple3;
+  > public adjustTypeArgs(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Lscala/collection/mutable/LinkedHashMap;
+  < public final arityMismatches$1(Lscala/collection/Iterable;Lscala/collection/mutable/ListBuffer;)V
+  < public final checkKindBoundsHK$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/Tuple3;
+  < private final gd11$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final gd9$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < public methTypeArgs(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Lscala/Tuple3;
+  > public methTypeArgs(Lscala/collection/immutable/List;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Lscala/collection/mutable/LinkedHashMap;
+  < public final stricterBound$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/mutable/ListBuffer;)V
+  < public final stricterBounds$1(Lscala/collection/Iterable;Lscala/collection/mutable/ListBuffer;)V
+  < public final transform$1(Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+  < public final varianceMismatch$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/mutable/ListBuffer;)V
+  < public final varianceMismatches$1(Lscala/collection/Iterable;Lscala/collection/mutable/ListBuffer;)V
+  < public variancesMatch(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/Infer$class.class
+  < public static formalTypes(Lscala/tools/nsc/typechecker/Analyzer;Lscala/collection/immutable/List;I)Lscala/collection/immutable/List;
+  < public static formalTypes(Lscala/tools/nsc/typechecker/Analyzer;Lscala/collection/immutable/List;IZ)Lscala/collection/immutable/List;
+  > public static formalTypes(Lscala/tools/nsc/typechecker/Analyzer;Lscala/collection/immutable/List;IZZ)Lscala/collection/immutable/List;
+  > public static formalTypes$default$3(Lscala/tools/nsc/typechecker/Analyzer;)Z
+  > public static formalTypes$default$4(Lscala/tools/nsc/typechecker/Analyzer;)Z
+
+scala/tools/nsc/typechecker/Infer.class
+  < public abstract formalTypes(Lscala/collection/immutable/List;I)Lscala/collection/immutable/List;
+  < public abstract formalTypes(Lscala/collection/immutable/List;IZ)Lscala/collection/immutable/List;
+  > public abstract formalTypes(Lscala/collection/immutable/List;IZZ)Lscala/collection/immutable/List;
+  > public abstract formalTypes$default$3()Z
+  > public abstract formalTypes$default$4()Z
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$10.class
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Z
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$11.class
+  < public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/Types$Type;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$12.class
+  < public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public final apply(Lscala/reflect/generic/Trees$TypeDef;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$21.class
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Z
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/AnnotationInfos$LazyAnnotationInfo;
+  > public scala$tools$nsc$typechecker$Namers$Namer$$anonfun$$$outer()Lscala/tools/nsc/typechecker/Namers$Namer;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$22.class
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/AnnotationInfos$LazyAnnotationInfo;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < public scala$tools$nsc$typechecker$Namers$Namer$$anonfun$$$outer()Lscala/tools/nsc/typechecker/Namers$Namer;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$5.class
+  < public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;Lscala/reflect/generic/Trees$ClassDef;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;)V
+  < public final apply()Lscala/reflect/generic/Trees$ModuleDef;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/collection/immutable/List;
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$6.class
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/collection/immutable/List;
+  > public final apply(Lscala/reflect/generic/Trees$ValDef;)Z
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$7.class
+  < public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;Lscala/reflect/generic/Trees$ClassDef;)V
+  < public final apply(Lscala/reflect/generic/Trees$ValDef;)Z
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/reflect/generic/Trees$ModuleDef;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$8.class
+  < public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;Lscala/reflect/generic/Trees$ClassDef;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;)V
+  < public final apply()Lscala/reflect/generic/Trees$ModuleDef;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Z
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$14.class
+  < public final apply(Lscala/reflect/generic/Trees$TypeDef;)Lscala/reflect/generic/Trees$TypeDef;
+  > public final apply(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+  > public scala$tools$nsc$typechecker$Namers$Namer$$anonfun$$anonfun$$anonfun$$$outer()Lscala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$15.class
+  < public final apply(Lscala/collection/immutable/List;)Lscala/collection/immutable/List;
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/Tuple2;
+  > public final apply()Ljava/lang/Object;
+  < public scala$tools$nsc$typechecker$Namers$Namer$$anonfun$$anonfun$$anonfun$$$outer()Lscala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$16.class
+  < public final apply()Lscala/Tuple2;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/reflect/generic/Trees$TypeDef;)Lscala/reflect/generic/Trees$TypeDef;
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12$$anonfun$17.class
+  < public final apply(Lscala/reflect/generic/Trees$TypeDef;)Lscala/reflect/generic/Trees$TypeDef;
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/tools/nsc/typechecker/Namers$Namer;
+  > public final apply()Ljava/lang/Object;
+  > public scala$tools$nsc$typechecker$Namers$Namer$$anonfun$$anonfun$$anonfun$$$outer()Lscala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2$$anonfun$apply$12;
+
+scala/tools/nsc/typechecker/Namers$Namer$$anonfun$addDefaultGetters$2.class
+  < public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;ZLscala/tools/nsc/symtab/Symbols$Symbol;ZLscala/runtime/ObjectRef;Lscala/runtime/ObjectRef;Lscala/runtime/ObjectRef;Lscala/runtime/IntRef;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Namers$Namer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;ZLscala/tools/nsc/symtab/Symbols$Symbol;ZLscala/runtime/ObjectRef;Lscala/runtime/ObjectRef;Lscala/runtime/ObjectRef;Lscala/runtime/IntRef;Ljava/lang/Object;)V
+
+scala/tools/nsc/typechecker/Namers$Namer.class
+  < public final verifyOverriding$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;)Z
+
+scala/tools/nsc/typechecker/Namers$class.class
+  > public static companionClassOf(Lscala/tools/nsc/typechecker/Analyzer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public static companionModuleOf(Lscala/tools/nsc/typechecker/Analyzer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/typechecker/Namers.class
+  > public abstract companionClassOf(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public abstract companionModuleOf(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/typechecker/NamesDefaults$$anonfun$14$$anon$1.class
+  < private final gd13$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private final gd15$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;)Z
+
+scala/tools/nsc/typechecker/NamesDefaults$$anonfun$14.class
+  > private final gd16$1(Lscala/tools/nsc/symtab/Symbols$CyclicReference;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/NamesDefaults$$anonfun$6.class
+  < public final apply(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Types$Type;)Lscala/Tuple2;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Types$Type;)Lscala/Tuple3;
+  > private final gd13$1(Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Ident;Lscala/tools/nsc/symtab/Names$Name;)Z
+
+scala/tools/nsc/typechecker/NamesDefaults$$anonfun$argValDefs$1$1.class
+  < public final apply(Lscala/Tuple2;Lscala/reflect/generic/Trees$Tree;)Lscala/reflect/generic/Trees$ValDef;
+  > public final apply(Lscala/Tuple3;Lscala/reflect/generic/Trees$Tree;)Lscala/reflect/generic/Trees$ValDef;
+  > private final gd14$1(Lscala/reflect/generic/Trees$Tree;Lscala/reflect/generic/Trees$Ident;Lscala/tools/nsc/symtab/Names$Name;)Z
+
+scala/tools/nsc/typechecker/NamesDefaults$class.class
+  < public static companionModuleOf(Lscala/tools/nsc/typechecker/Analyzer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/typechecker/NamesDefaults.class
+  < public abstract companionModuleOf(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$10.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/runtime/IntRef;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/collection/immutable/List;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$11.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$MethodSymbol;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;)V
+  < public final apply()Lscala/reflect/generic/Trees$Tree;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Names$Name;
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$12.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/reflect/generic/Trees$Tree;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/runtime/IntRef;)V
+  < public final apply()Lscala/reflect/generic/Trees$Tree;
+  < public final apply()Ljava/lang/Object;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/collection/immutable/List;
+  > public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$13.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Symbols$MethodSymbol;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeBounds;
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/reflect/generic/Trees$Tree;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$14.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/reflect/generic/Trees$Tree;)V
+  < public final apply(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Types$Type;)Z
+  < public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/reflect/generic/Trees$Tree;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$15.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/collection/immutable/List;Lscala/collection/immutable/List;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/tools/nsc/symtab/Types$TypeBounds;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$16.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/runtime/ObjectRef;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;)V
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)V
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Types$Type;)Z
+  > public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  < public scala$tools$nsc$typechecker$RefChecks$RefCheckTransformer$$anonfun$$$outer()Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$17.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/reflect/generic/Trees$Tree;Lscala/collection/mutable/ListBuffer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;)V
+  < public final apply(Lscala/tools/nsc/symtab/Types$Type;)V
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < public scala$tools$nsc$typechecker$RefChecks$RefCheckTransformer$$anonfun$$$outer()Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$19.class
+  < public final apply(Lscala/reflect/generic/Trees$Tree;)Lscala/tools/nsc/symtab/Types$Type;
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Ljava/lang/String;
+  > public final apply()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$checkAllOverrides$1.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/mutable/ListBuffer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)V
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Ljava/lang/Object;
+  > public scala$tools$nsc$typechecker$RefChecks$RefCheckTransformer$$anonfun$$$outer()Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$$anonfun$javaErasedOverridingSym$1$1.class
+  > private final uncurryAndErase$1(Lscala/tools/nsc/symtab/Types$Type;)Lscala/tools/nsc/symtab/Types$Type;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$MixinOverrideError$3$.class
+  < public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer;Lscala/runtime/ObjectRef;)V
+  > public readResolve()Ljava/lang/Object;
+
+scala/tools/nsc/typechecker/RefChecks$RefCheckTransformer.class
+  < private final MixinOverrideError$1(Lscala/runtime/ObjectRef;)Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$MixinOverrideError$3$;
+  > public final MixinOverrideError$1(Lscala/runtime/ObjectRef;)Lscala/tools/nsc/typechecker/RefChecks$RefCheckTransformer$MixinOverrideError$3$;
+  < private applyRefchecksToAnnotations(Lscala/reflect/generic/Trees$Tree;)Ljava/lang/Object;
+  > private final checkNoAbstractMembers$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/symtab/Types$Type;Lscala/collection/mutable/ListBuffer;)V
+  < public final isClazzAbstract$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final memberList$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Lscala/collection/immutable/List;
+  > public final scala$tools$nsc$typechecker$RefChecks$RefCheckTransformer$$applyRefchecksToAnnotations(Lscala/reflect/generic/Trees$Tree;)V
+
+scala/tools/nsc/typechecker/RefChecks.class
+  > public toScalaRepeatedParam()Lscala/tools/nsc/symtab/Types$TypeMap;
+
+scala/tools/nsc/typechecker/TreeCheckers.class
+  > public final ImplicitNotFoundMsg()Lscala/tools/nsc/typechecker/Implicits$ImplicitNotFoundMsg$;
+  > public companionClassOf(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Contexts$Context;)Lscala/tools/nsc/symtab/Symbols$Symbol;
+  > public companionModuleDef$default$2()Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;I)Lscala/collection/immutable/List;
+  < public formalTypes(Lscala/collection/immutable/List;IZ)Lscala/collection/immutable/List;
+  > public formalTypes(Lscala/collection/immutable/List;IZZ)Lscala/collection/immutable/List;
+  > public formalTypes$default$3()Z
+  > public formalTypes$default$4()Z
+
+scala/tools/nsc/typechecker/Typers$Typer$$anonfun$adapt$1.class
+  < public <init>(Lscala/tools/nsc/typechecker/Typers$Typer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Typers$Typer;Lscala/reflect/generic/Trees$Tree;ILscala/tools/nsc/symtab/Types$Type;)V
+  < public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public final apply(Lscala/tools/nsc/typechecker/Typers$Typer;)Lscala/reflect/generic/Trees$Tree;
+
+scala/tools/nsc/typechecker/Typers$Typer$$anonfun$adapt$2.class
+  < public <init>(Lscala/tools/nsc/typechecker/Typers$Typer;Lscala/reflect/generic/Trees$Tree;ILscala/tools/nsc/symtab/Types$Type;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Typers$Typer;)V
+  < public final apply(Lscala/tools/nsc/typechecker/Typers$Typer;)Lscala/reflect/generic/Trees$Tree;
+  > public final apply(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+
+scala/tools/nsc/typechecker/Typers$Typer$$anonfun$typed1$2.class
+  < public <init>(Lscala/tools/nsc/typechecker/Typers$Typer;Lscala/tools/nsc/typechecker/Typers$Typer;)V
+  > public <init>(Lscala/tools/nsc/typechecker/Typers$Typer;Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/tools/nsc/typechecker/Typers$Typer;)V
+  > public scala$tools$nsc$typechecker$Typers$Typer$$anonfun$$$outer()Lscala/tools/nsc/typechecker/Typers$Typer;
+
+scala/tools/nsc/typechecker/Typers$Typer.class
+  > public callToCompanionConstr(Lscala/tools/nsc/typechecker/Contexts$Context;Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public final deindentTyping()V
+  > public final errorMessage$1(Lscala/tools/nsc/symtab/Names$Name;Lscala/tools/nsc/symtab/Types$Type;)Ljava/lang/String;
+  < private final gd24$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;)Z
+  > private final gd24$1(Lscala/reflect/generic/Trees$Tree;Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+  < private final gd25$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private final gd25$1(Lscala/tools/nsc/symtab/Symbols$Symbol;Lscala/collection/immutable/List;)Z
+  < private final gd26$1(Lscala/reflect/generic/Trees$Modifiers;)Z
+  > private final gd26$1(Lscala/collection/immutable/List;Lscala/tools/nsc/symtab/Types$Type;)Z
+  < private final gd27$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final gd27$1(Lscala/reflect/generic/Trees$Modifiers;)Z
+  < private final gd28$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/tools/nsc/symtab/Types$Type;)Z
+  > private final gd28$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  < private final gd29$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;I)Z
+  > private final gd29$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/tools/nsc/symtab/Types$Type;)Z
+  < private final gd30$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;)Z
+  > private final gd30$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;I)Z
+  < private final gd31$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > private final gd31$1(Lscala/tools/nsc/ast/Trees$TypeTree;Lscala/tools/nsc/symtab/Names$Name;)Z
+  > private final gd32$1(Lscala/reflect/generic/Trees$Tree;Lscala/tools/nsc/symtab/Names$Name;Lscala/collection/immutable/List;)Z
+  > private final gd33$1(Lscala/tools/nsc/symtab/Symbols$Symbol;)Z
+  > public final indentTyping()V
+  > public final printTyping(Lscala/Function0;)V
+  > private final typeDefTyper$1(Lscala/reflect/generic/Trees$TypeDef;)Lscala/tools/nsc/typechecker/Typers$Typer;
+  > private typedTypeDef0(Lscala/reflect/generic/Trees$TypeDef;)Lscala/reflect/generic/Trees$TypeDef;
+
+scala/tools/nsc/typechecker/Unapplies$class.class
+  > public static companionModuleDef$default$2(Lscala/tools/nsc/typechecker/Analyzer;)Lscala/collection/immutable/List;
+  > private static final primaries$1(Lscala/tools/nsc/typechecker/Analyzer;Lscala/reflect/generic/Trees$ClassDef;)Lscala/collection/immutable/List;
+
+scala/tools/nsc/typechecker/Unapplies.class
+  > public abstract companionModuleDef$default$2()Lscala/collection/immutable/List;
+
+
+>> Now processing: 295 classes in scala-dbc.jar.
+
+Classes identical in both jars: 284
+
+Classes differing only in the readResolve() method: 11
+scala/dbc/Database$.class
+scala/dbc/exception/IncompatibleSchema$.class
+scala/dbc/exception/UnsupportedFeature$.class
+scala/dbc/statement/Insert$.class
+scala/dbc/statement/InsertionData$Constructor$.class
+scala/dbc/statement/InsertionData$Subquery$.class
+scala/dbc/statement/SetClause$.class
+scala/dbc/statement/Transaction$.class
+scala/dbc/statement/Update$.class
+scala/dbc/statement/expression/FunctionCall$.class
+scala/dbc/statement/expression/TypeCast$.class
+
+>> Now processing: 4139 classes in scala-library.jar.
+
+Classes identical in both jars: 3866
+
+Classes missing from new jar: 2
+scala/collection/immutable/Stream$$anonfun$2.class
+scala/collection/immutable/Stream$$anonfun$filter$1.class
+
+Classes differing only in the readResolve() method: 256
+scala/Cell$.class
+scala/Either$LeftProjection$.class
+scala/Either$RightProjection$.class
+scala/Enumeration$.class
+scala/Left$.class
+scala/Responder$.class
+scala/Right$.class
+scala/Some$.class
+scala/Symbol$.class
+scala/Tuple1$.class
+scala/Tuple10$.class
+scala/Tuple11$.class
+scala/Tuple12$.class
+scala/Tuple13$.class
+scala/Tuple14$.class
+scala/Tuple15$.class
+scala/Tuple16$.class
+scala/Tuple17$.class
+scala/Tuple18$.class
+scala/Tuple19$.class
+scala/Tuple2$.class
+scala/Tuple20$.class
+scala/Tuple21$.class
+scala/Tuple22$.class
+scala/Tuple3$.class
+scala/Tuple4$.class
+scala/Tuple5$.class
+scala/Tuple6$.class
+scala/Tuple7$.class
+scala/Tuple8$.class
+scala/Tuple9$.class
+scala/UninitializedFieldError$.class
+scala/actors/$bang$.class
+scala/actors/Actor$.class
+scala/actors/Exit$.class
+scala/actors/ReactChannel$SendToReactor$.class
+scala/actors/UncaughtException$.class
+scala/actors/remote/Apply0$.class
+scala/actors/remote/LocalApply0$.class
+scala/actors/remote/Locator$.class
+scala/actors/remote/NamedSend$.class
+scala/actors/remote/Node$.class
+scala/actors/remote/RemoteApply0$.class
+scala/actors/remote/SendTo$.class
+scala/collection/JavaConversions$DictionaryWrapper$.class
+scala/collection/JavaConversions$IterableWrapper$.class
+scala/collection/JavaConversions$IteratorWrapper$.class
+scala/collection/JavaConversions$JCollectionWrapper$.class
+scala/collection/JavaConversions$JConcurrentMapWrapper$.class
+scala/collection/JavaConversions$JDictionaryWrapper$.class
+scala/collection/JavaConversions$JEnumerationWrapper$.class
+scala/collection/JavaConversions$JIterableWrapper$.class
+scala/collection/JavaConversions$JIteratorWrapper$.class
+scala/collection/JavaConversions$JListWrapper$.class
+scala/collection/JavaConversions$JMapWrapper$.class
+scala/collection/JavaConversions$JPropertiesWrapper$.class
+scala/collection/JavaConversions$JSetWrapper$.class
+scala/collection/JavaConversions$MutableBufferWrapper$.class
+scala/collection/JavaConversions$MutableMapWrapper$.class
+scala/collection/JavaConversions$MutableSeqWrapper$.class
+scala/collection/JavaConversions$MutableSetWrapper$.class
+scala/collection/JavaConversions$SeqWrapper$.class
+scala/collection/immutable/$colon$colon$.class
+scala/collection/immutable/BitSet$.class
+scala/collection/immutable/HashMap$.class
+scala/collection/immutable/HashSet$.class
+scala/collection/immutable/IntMap$Bin$.class
+scala/collection/immutable/IntMap$Tip$.class
+scala/collection/immutable/ListMap$.class
+scala/collection/immutable/ListSet$.class
+scala/collection/immutable/LongMap$Bin$.class
+scala/collection/immutable/LongMap$Tip$.class
+scala/collection/immutable/NumericRange$.class
+scala/collection/immutable/Queue$.class
+scala/collection/immutable/Range$.class
+scala/collection/immutable/RedBlack$BlackTree$.class
+scala/collection/immutable/RedBlack$RedTree$.class
+scala/collection/immutable/Stack$.class
+scala/collection/immutable/TreeMap$.class
+scala/collection/immutable/TreeSet$.class
+scala/collection/immutable/Vector$.class
+scala/collection/mutable/ArrayBuffer$.class
+scala/collection/mutable/ArrayBuilder$.class
+scala/collection/mutable/BitSet$.class
+scala/collection/mutable/DoubleLinkedList$.class
+scala/collection/mutable/HashMap$.class
+scala/collection/mutable/HashSet$.class
+scala/collection/mutable/LinkedHashMap$.class
+scala/collection/mutable/LinkedHashSet$.class
+scala/collection/mutable/LinkedList$.class
+scala/collection/mutable/ListBuffer$.class
+scala/collection/mutable/ListMap$.class
+scala/collection/mutable/Queue$.class
+scala/collection/mutable/Stack$.class
+scala/collection/script/Include$.class
+scala/collection/script/Index$.class
+scala/collection/script/Remove$.class
+scala/collection/script/Reset$.class
+scala/collection/script/Update$.class
+scala/concurrent/pilib$Sum$.class
+scala/concurrent/pilib$UGP$.class
+scala/io/BytePickle$Def$.class
+scala/io/BytePickle$Ref$.class
+scala/math/BigDecimal$.class
+scala/math/BigInt$.class
+scala/math/Ordering$.class
+scala/reflect/AppliedType$.class
+scala/reflect/Apply$.class
+scala/reflect/Assign$.class
+scala/reflect/Block$.class
+scala/reflect/Class$.class
+scala/reflect/ClassDef$.class
+scala/reflect/ClassManifest$.class
+scala/reflect/DefDef$.class
+scala/reflect/Field$.class
+scala/reflect/Function$.class
+scala/reflect/Goto$.class
+scala/reflect/Ident$.class
+scala/reflect/If$.class
+scala/reflect/LabelSymbol$.class
+scala/reflect/Literal$.class
+scala/reflect/LocalMethod$.class
+scala/reflect/LocalValue$.class
+scala/reflect/Manifest$.class
+scala/reflect/Method$.class
+scala/reflect/MethodType$.class
+scala/reflect/NamedType$.class
+scala/reflect/New$.class
+scala/reflect/PolyType$.class
+scala/reflect/PrefixedType$.class
+scala/reflect/Select$.class
+scala/reflect/SingleType$.class
+scala/reflect/Super$.class
+scala/reflect/Target$.class
+scala/reflect/Template$.class
+scala/reflect/This$.class
+scala/reflect/ThisType$.class
+scala/reflect/TypeApply$.class
+scala/reflect/TypeBounds$.class
+scala/reflect/TypeField$.class
+scala/reflect/ValDef$.class
+scala/reflect/generic/Constants$Constant$.class
+scala/reflect/generic/Trees$Alternative$.class
+scala/reflect/generic/Trees$Annotated$.class
+scala/reflect/generic/Trees$AppliedTypeTree$.class
+scala/reflect/generic/Trees$Apply$.class
+scala/reflect/generic/Trees$ApplyDynamic$.class
+scala/reflect/generic/Trees$ArrayValue$.class
+scala/reflect/generic/Trees$Assign$.class
+scala/reflect/generic/Trees$Bind$.class
+scala/reflect/generic/Trees$Block$.class
+scala/reflect/generic/Trees$CaseDef$.class
+scala/reflect/generic/Trees$ClassDef$.class
+scala/reflect/generic/Trees$CompoundTypeTree$.class
+scala/reflect/generic/Trees$DefDef$.class
+scala/reflect/generic/Trees$ExistentialTypeTree$.class
+scala/reflect/generic/Trees$Function$.class
+scala/reflect/generic/Trees$Ident$.class
+scala/reflect/generic/Trees$If$.class
+scala/reflect/generic/Trees$Import$.class
+scala/reflect/generic/Trees$ImportSelector$.class
+scala/reflect/generic/Trees$LabelDef$.class
+scala/reflect/generic/Trees$Literal$.class
+scala/reflect/generic/Trees$Match$.class
+scala/reflect/generic/Trees$Modifiers$.class
+scala/reflect/generic/Trees$ModuleDef$.class
+scala/reflect/generic/Trees$New$.class
+scala/reflect/generic/Trees$PackageDef$.class
+scala/reflect/generic/Trees$Return$.class
+scala/reflect/generic/Trees$Select$.class
+scala/reflect/generic/Trees$SelectFromArray$.class
+scala/reflect/generic/Trees$SelectFromTypeTree$.class
+scala/reflect/generic/Trees$SingletonTypeTree$.class
+scala/reflect/generic/Trees$Star$.class
+scala/reflect/generic/Trees$Super$.class
+scala/reflect/generic/Trees$Template$.class
+scala/reflect/generic/Trees$This$.class
+scala/reflect/generic/Trees$Throw$.class
+scala/reflect/generic/Trees$Try$.class
+scala/reflect/generic/Trees$TypeApply$.class
+scala/reflect/generic/Trees$TypeBoundsTree$.class
+scala/reflect/generic/Trees$TypeDef$.class
+scala/reflect/generic/Trees$Typed$.class
+scala/reflect/generic/Trees$UnApply$.class
+scala/reflect/generic/Trees$ValDef$.class
+scala/testing/SUnit$AssertFailed$.class
+scala/text/DocCons$.class
+scala/text/DocGroup$.class
+scala/text/DocNest$.class
+scala/text/DocText$.class
+scala/util/control/TailCalls$Call$.class
+scala/util/control/TailCalls$Done$.class
+scala/util/grammar/ConsRHS$.class
+scala/util/grammar/LabelledRHS$.class
+scala/util/matching/Regex$.class
+scala/util/parsing/ast/Binders$BoundElement$.class
+scala/util/parsing/combinator/PackratParsers$Head$.class
+scala/util/parsing/combinator/PackratParsers$LR$.class
+scala/util/parsing/combinator/PackratParsers$MemoEntry$.class
+scala/util/parsing/combinator/Parsers$$tilde$.class
+scala/util/parsing/combinator/Parsers$Error$.class
+scala/util/parsing/combinator/Parsers$Failure$.class
+scala/util/parsing/combinator/Parsers$Success$.class
+scala/util/parsing/combinator/testing/Ident$.class
+scala/util/parsing/combinator/testing/Number$.class
+scala/util/parsing/combinator/testing/Str$.class
+scala/util/parsing/combinator/token/StdTokens$Identifier$.class
+scala/util/parsing/combinator/token/StdTokens$Keyword$.class
+scala/util/parsing/combinator/token/StdTokens$NumericLit$.class
+scala/util/parsing/combinator/token/StdTokens$StringLit$.class
+scala/util/parsing/combinator/token/Tokens$ErrorToken$.class
+scala/util/parsing/input/OffsetPosition$.class
+scala/util/parsing/json/JSONArray$.class
+scala/util/parsing/json/JSONObject$.class
+scala/util/regexp/Base$Star$.class
+scala/util/regexp/PointedHedgeExp$Node$.class
+scala/util/regexp/PointedHedgeExp$TopIter$.class
+scala/util/regexp/WordExp$Letter$.class
+scala/util/regexp/WordExp$Wildcard$.class
+scala/xml/Comment$.class
+scala/xml/Elem$.class
+scala/xml/EntityRef$.class
+scala/xml/Group$.class
+scala/xml/MalformedAttributeException$.class
+scala/xml/MetaData$.class
+scala/xml/NamespaceBinding$.class
+scala/xml/PCData$.class
+scala/xml/PrettyPrinter$Box$.class
+scala/xml/PrettyPrinter$Para$.class
+scala/xml/ProcInstr$.class
+scala/xml/Text$.class
+scala/xml/dtd/AttListDecl$.class
+scala/xml/dtd/AttrDecl$.class
+scala/xml/dtd/ContentModel$ElemName$.class
+scala/xml/dtd/DEFAULT$.class
+scala/xml/dtd/DocType$.class
+scala/xml/dtd/ELEMENTS$.class
+scala/xml/dtd/ElemDecl$.class
+scala/xml/dtd/ExtDef$.class
+scala/xml/dtd/IntDef$.class
+scala/xml/dtd/MIXED$.class
+scala/xml/dtd/NotationDecl$.class
+scala/xml/dtd/PEReference$.class
+scala/xml/dtd/ParameterEntityDecl$.class
+scala/xml/dtd/ParsedEntityDecl$.class
+scala/xml/dtd/PublicID$.class
+scala/xml/dtd/SystemID$.class
+scala/xml/dtd/UnparsedEntityDecl$.class
+scala/xml/dtd/ValidationException$.class
+scala/xml/parsing/FatalError$.class
+scala/xml/pull/EvComment$.class
+scala/xml/pull/EvElemEnd$.class
+scala/xml/pull/EvElemStart$.class
+scala/xml/pull/EvEntityRef$.class
+scala/xml/pull/EvProcInstr$.class
+scala/xml/pull/EvText$.class
+
+Classes with altered signatures: 15
+scala/Option$.class
+  > public empty()Lscala/Option;
+
+scala/Option.class
+  > public static final empty()Lscala/Option;
+
+scala/actors/ReactChannel.class
+  < private final SendToReactor()Lscala/actors/ReactChannel$SendToReactor$;
+  > public final scala$actors$ReactChannel$$SendToReactor()Lscala/actors/ReactChannel$SendToReactor$;
+
+scala/collection/immutable/IntMap$.class
+  > public canBuildFrom()Lscala/collection/generic/CanBuildFrom;
+
+scala/collection/immutable/IntMap.class
+  > public static final canBuildFrom()Lscala/collection/generic/CanBuildFrom;
+
+scala/collection/immutable/LongMap$.class
+  > public canBuildFrom()Lscala/collection/generic/CanBuildFrom;
+
+scala/collection/immutable/LongMap.class
+  > public static final canBuildFrom()Lscala/collection/generic/CanBuildFrom;
+
+scala/collection/immutable/Stream$$anonfun$1.class
+  < public <init>(Lscala/collection/immutable/Stream;Lscala/Function1;)V
+  > public <init>(Lscala/collection/immutable/Stream;Lscala/runtime/ObjectRef;)V
+  < public final apply(Ljava/lang/Object;)Z
+  < public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+  > public final apply()Lscala/collection/immutable/Stream;
+  > public final apply()Ljava/lang/Object;
+
+scala/collection/immutable/Stream$$anonfun$loop$5$1.class
+  < public <init>(Lscala/Function1;I)V
+  > public <init>(ILscala/Function1;I)V
+
+scala/collection/immutable/Stream$.class
+  > public filteredTail(Lscala/collection/immutable/Stream;Lscala/Function1;)Lscala/collection/immutable/Stream$Cons;
+  < private final loop$5(IILscala/Function1;)Lscala/collection/immutable/Stream;
+  > public final loop$5(IILscala/Function1;)Lscala/collection/immutable/Stream;
+
+scala/collection/immutable/Stream.class
+  < public final filter(Lscala/Function1;)Lscala/collection/immutable/Stream;
+  < public final filter(Lscala/Function1;)Ljava/lang/Object;
+  > public filter(Lscala/Function1;)Lscala/collection/immutable/Stream;
+  > public filter(Lscala/Function1;)Ljava/lang/Object;
+  > public static final filteredTail(Lscala/collection/immutable/Stream;Lscala/Function1;)Lscala/collection/immutable/Stream$Cons;
+  > public static final loop$5(IILscala/Function1;)Lscala/collection/immutable/Stream;
+
+scala/runtime/ScalaRunTime$.class
+  > private final mapTraversable$1(Lscala/collection/Traversable;Lscala/Function1;)Lscala/collection/Traversable;
+
+scala/util/Random$$anonfun$shuffle$1.class
+  < public <init>(Lscala/collection/mutable/ArrayBuffer;)V
+  > public <init>(Lscala/util/Random;Lscala/collection/mutable/ArrayBuffer;)V
+
+scala/util/Random$.class
+  < public shuffle(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Lscala/collection/TraversableOnce;
+  < public final swap$1(IILscala/collection/mutable/ArrayBuffer;)V
+
+scala/util/Random.class
+  > public shuffle(Lscala/collection/TraversableOnce;Lscala/collection/generic/CanBuildFrom;)Lscala/collection/TraversableOnce;
+  > public final swap$1(IILscala/collection/mutable/ArrayBuffer;)V
+
+
+>> Now processing: 602 classes in scala-swing.jar.
+
+Classes identical in both jars: 553
+
+Classes differing only in the readResolve() method: 45
+scala/swing/event/BackgroundChanged$.class
+scala/swing/event/ButtonClicked$.class
+scala/swing/event/CaretUpdate$.class
+scala/swing/event/ComponentAdded$.class
+scala/swing/event/ComponentHidden$.class
+scala/swing/event/ComponentMoved$.class
+scala/swing/event/ComponentRemoved$.class
+scala/swing/event/ComponentResized$.class
+scala/swing/event/ComponentShown$.class
+scala/swing/event/EditDone$.class
+scala/swing/event/FocusGained$.class
+scala/swing/event/FocusLost$.class
+scala/swing/event/FontChanged$.class
+scala/swing/event/ForegroundChanged$.class
+scala/swing/event/KeyPressed$.class
+scala/swing/event/KeyReleased$.class
+scala/swing/event/KeyTyped$.class
+scala/swing/event/MouseClicked$.class
+scala/swing/event/MouseDragged$.class
+scala/swing/event/MouseEntered$.class
+scala/swing/event/MouseExited$.class
+scala/swing/event/MouseMoved$.class
+scala/swing/event/MousePressed$.class
+scala/swing/event/MouseReleased$.class
+scala/swing/event/MouseWheelMoved$.class
+scala/swing/event/SelectionChanged$.class
+scala/swing/event/TableChanged$.class
+scala/swing/event/TableColumnsSelected$.class
+scala/swing/event/TableRowsAdded$.class
+scala/swing/event/TableRowsRemoved$.class
+scala/swing/event/TableRowsSelected$.class
+scala/swing/event/TableStructureChanged$.class
+scala/swing/event/TableUpdated$.class
+scala/swing/event/UIElementHidden$.class
+scala/swing/event/UIElementMoved$.class
+scala/swing/event/UIElementResized$.class
+scala/swing/event/UIElementShown$.class
+scala/swing/event/WindowActivated$.class
+scala/swing/event/WindowClosed$.class
+scala/swing/event/WindowClosing$.class
+scala/swing/event/WindowDeactivated$.class
+scala/swing/event/WindowDeiconified$.class
+scala/swing/event/WindowIconified$.class
+scala/swing/event/WindowOpened$.class
+scala/swing/test/ListViewDemo$$anon$1$City$.class
+
+Classes with altered signatures: 4
+scala/swing/Action$Trigger$Wrapper$class.class
+  > public static <clinit>()V
+
+scala/swing/Orientable$Wrapper$class.class
+  > public static <clinit>()V
+
+scala/swing/Oriented$Wrapper$class.class
+  > public static <clinit>()V
+
+scala/swing/test/ListViewDemo$$anon$1.class
+  < private final City()Lscala/swing/test/ListViewDemo$$anon$1$City$;
+  > public final scala$swing$test$ListViewDemo$$anon$$City()Lscala/swing/test/ListViewDemo$$anon$1$City$;
+
+
+>> Now processing: 640 classes in scalap.jar.
+
+Classes identical in both jars: 576
+
+Classes differing only in the readResolve() method: 61
+scala/tools/scalap/Arguments$Parser$.class
+scala/tools/scalap/Classfile$Attribute$.class
+scala/tools/scalap/Classfile$Member$.class
+scala/tools/scalap/Classfile$Pool$ClassRef$.class
+scala/tools/scalap/Classfile$Pool$DoubleConst$.class
+scala/tools/scalap/Classfile$Pool$FieldRef$.class
+scala/tools/scalap/Classfile$Pool$FloatConst$.class
+scala/tools/scalap/Classfile$Pool$IntegerConst$.class
+scala/tools/scalap/Classfile$Pool$IntfMethodRef$.class
+scala/tools/scalap/Classfile$Pool$LongConst$.class
+scala/tools/scalap/Classfile$Pool$MethodRef$.class
+scala/tools/scalap/Classfile$Pool$NameAndType$.class
+scala/tools/scalap/Classfile$Pool$StringConst$.class
+scala/tools/scalap/Classfile$Pool$UTF8$.class
+scala/tools/scalap/scalax/rules/$tilde$.class
+scala/tools/scalap/scalax/rules/Error$.class
+scala/tools/scalap/scalax/rules/ScalaSigParserError$.class
+scala/tools/scalap/scalax/rules/Success$.class
+scala/tools/scalap/scalax/rules/scalasig/AliasSymbol$.class
+scala/tools/scalap/scalax/rules/scalasig/AnnotInfo$.class
+scala/tools/scalap/scalax/rules/scalasig/AnnotatedType$.class
+scala/tools/scalap/scalax/rules/scalasig/AnnotatedWithSelfType$.class
+scala/tools/scalap/scalax/rules/scalasig/Attribute$.class
+scala/tools/scalap/scalax/rules/scalasig/AttributeInfo$.class
+scala/tools/scalap/scalax/rules/scalasig/Children$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFile$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFileHeader$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFileParser$Annotation$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFileParser$AnnotationElement$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFileParser$ArrayValue$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFileParser$ClassInfoIndex$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFileParser$ConstValueIndex$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassFileParser$EnumConstValue$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassInfoType$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassInfoTypeWithCons$.class
+scala/tools/scalap/scalax/rules/scalasig/ClassSymbol$.class
+scala/tools/scalap/scalax/rules/scalasig/ConstantPool$.class
+scala/tools/scalap/scalax/rules/scalasig/ConstantType$.class
+scala/tools/scalap/scalax/rules/scalasig/DeBruijnIndexType$.class
+scala/tools/scalap/scalax/rules/scalasig/ExistentialType$.class
+scala/tools/scalap/scalax/rules/scalasig/ExternalSymbol$.class
+scala/tools/scalap/scalax/rules/scalasig/Field$.class
+scala/tools/scalap/scalax/rules/scalasig/ImplicitMethodType$.class
+scala/tools/scalap/scalax/rules/scalasig/Method$.class
+scala/tools/scalap/scalax/rules/scalasig/MethodSymbol$.class
+scala/tools/scalap/scalax/rules/scalasig/MethodType$.class
+scala/tools/scalap/scalax/rules/scalasig/ObjectSymbol$.class
+scala/tools/scalap/scalax/rules/scalasig/PolyType$.class
+scala/tools/scalap/scalax/rules/scalasig/PolyTypeWithCons$.class
+scala/tools/scalap/scalax/rules/scalasig/RefinedType$.class
+scala/tools/scalap/scalax/rules/scalasig/ScalaSig$.class
+scala/tools/scalap/scalax/rules/scalasig/ScalaSig$Entry$.class
+scala/tools/scalap/scalax/rules/scalasig/ScalaSigPrinter$TypeFlags$.class
+scala/tools/scalap/scalax/rules/scalasig/SingleType$.class
+scala/tools/scalap/scalax/rules/scalasig/SourceFileInfo$.class
+scala/tools/scalap/scalax/rules/scalasig/StringBytesPair$.class
+scala/tools/scalap/scalax/rules/scalasig/SymbolInfo$.class
+scala/tools/scalap/scalax/rules/scalasig/ThisType$.class
+scala/tools/scalap/scalax/rules/scalasig/TypeBoundsType$.class
+scala/tools/scalap/scalax/rules/scalasig/TypeRefType$.class
+scala/tools/scalap/scalax/rules/scalasig/TypeSymbol$.class
+
+Classes with altered signatures: 3
+scala/tools/scalap/scalax/rules/MemoisableRules$class.class
+  > public static <clinit>()V
+
+scala/tools/scalap/scalax/rules/SeqRule.class
+  > public static <clinit>()V
+
+scala/tools/scalap/scalax/rules/scalasig/ScalaSigPrinter.class
+  > public static <clinit>()V

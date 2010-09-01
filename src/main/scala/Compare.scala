@@ -62,17 +62,17 @@ object Compare {
     println("Classes identical in both jars: " + identical.size + "\n")
     if (missing.nonEmpty) {
       println("Classes missing from new jar: " + missing.size)
-      missing foreach println
+      missing.sorted foreach println
       println("")
     }
     if (rresolve.nonEmpty) {
       println("Classes differing only in the readResolve() method: " + rresolve.size)
-      rresolve foreach println
+      rresolve.sorted foreach println
       println("")
     }
     if (changed.nonEmpty) {
       println("Classes with altered signatures: " + changed.size)
-      for ((name, lines) <- changed) {
+      for ((name, lines) <- changed sortBy (_._1)) {
         println(name)
         lines foreach (x => println("  " + x))
         println("")
