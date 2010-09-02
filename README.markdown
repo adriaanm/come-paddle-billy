@@ -15,3 +15,8 @@ Put exactly two scala distributions in dists/, like this:
 And then "sbt run" and you're off to the races.
 
 Sample output available in sample-output.txt.
+
+STILL TODO
+----------
+
+Intelligence about what represents a breaking change.  For now, Billy leaves nothing out.
