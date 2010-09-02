@@ -2,6 +2,7 @@ package improving
 package compare
 
 import jar._
+import tools.nsc.util.ScalaClassLoader
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,14 +16,24 @@ trait ClassAnalyzer extends ((Disassembly, Disassembly) => List[ClassChange]) {
   def err(cond: Boolean)(msg: String) = if(cond) List(ClassChange(msg)) else List()
 }
 
-object ClassChangeReport extends ClassAnalyzer {
-  val analyzers: List[ClassAnalyzer] = List()
-  def apply(lhs: Disassembly, rhs: Disassembly) = analyzers flatMap (_.apply(lhs,rhs))
+object ClassChangeReport {
+  import analysis._
+  val analyzers: List[ClassAnalyzer] = List(Abstract,Final,Public,Hierarchy,ClassBody)
+  def apply(cp1: List[File], lhs: Disassembly, cp2: List[File], rhs: Disassembly) = {
+    javapOrig = new Javap(ScalaClassLoader.fromURLs(cp1 map (_.toURL)))
+    javapNew = new Javap(ScalaClassLoader.fromURLs(cp2 map (_.toURL)))
+    analyzers flatMap (_.apply(lhs,rhs))
+  }
 }
 
 case class ClassChange(msg: String)
 
-object analyzers {
+object analysis {
+var javapOrig: Javap = _
+var javapNew: Javap = _
+def diffBy[T](as: List[T], bs: List[T])(p: (T, T) => Boolean): List[T]
+  = as filter (a => !bs.exists(b => p(a, b)))
+
 /*13.4.1 abstract Classes
 
 If a class that was not abstract is changed to be declared abstract, then pre-existing binaries that attempt to create new instances of that class will throw either an InstantiationError at link time, or (if a reflective method is used) an InstantiationException at run time; such a change is therefore not recommended for widely distributed classes.
@@ -62,17 +73,18 @@ provided that the total set of superclasses or superinterfaces, respectively, of
 If a change to the direct superclass or the set of direct superinterfaces results in any class or interface no longer being a superclass or superinterface, respectively, then link-time errors may result if pre-existing binaries are loaded with the binary of the modified class.
 */
 object Hierarchy extends ClassAnalyzer {
-  def apply(lhs: Disassembly, rhs: Disassembly) =
+  def apply(lhs: Disassembly, rhs: Disassembly) = {
+    //val diffInterfaces = diffBy(lhs.superInterfaces(javapOrig), rhs.superInterfaces(javapNew)){_.className == _.className}     // TODO relax: take transitive closure
+    val diffInterfaces = diffBy(lhs.superInterfaceNames, rhs.superInterfaceNames){_ == _}
     err(lhs.superClassName != rhs.superClassName)("Must inherit the same superclass. "+(lhs.superClassName, rhs.superClassName)) ++
-    err(lhs.superInterfaces != rhs.superInterfaces)("Must inherit the same superinterfaces. "+(lhs.superInterfaces, rhs.superInterfaces)) // TODO: this may be relaxed: allowed to add superinterfaces (but: abstract method errors!)
+    err(diffInterfaces.nonEmpty)("Must inherit the same superinterfaces. "+ diffInterfaces) // TODO: this may be relaxed: allowed to add superinterfaces (but: abstract method errors!)
+  }
 }
 
 /*13.4.5 Class Body and Member Declarations
 
 */
 object ClassBody extends ClassAnalyzer {
-  def diffBy(as: List[MemberDisassembly], bs: List[MemberDisassembly])(p: (MemberDisassembly, MemberDisassembly) => Boolean): List[MemberDisassembly]
-    = as filter (a => !bs.exists(b => p(a, b)))
   def sameNameDiff[T <: MemberDisassembly](ms: List[T], m: T): List[T]
     = ms filter (a => a.name == m.name)
 
@@ -93,9 +105,9 @@ object ClassBody extends ClassAnalyzer {
       val deletedFields = diffBy(lhsFields, rhsFields){_.internalSig == _.internalSig}
       val deletedNonPrivateFields = deletedFields filter (! _.isPrivate)
 // Deleting a class member or constructor that is not declared private may cause a linkage error if the member or constructor is used by a pre-existing binary.
-      err(deletedNonPrivateMethods exists (m => rhs.inherited(m).isEmpty))("Must not delete non-private methods: "+ deletedNonPrivateMethods mkString) ++ { // okay if it has been pulled up
+      err(deletedNonPrivateMethods exists (m => rhs.inherited(m)(javapNew).isEmpty))("Must not delete non-private methods: "+ (deletedNonPrivateMethods map (_.signature)) mkString) ++ { // okay if it has been pulled up
   // Deleting a class member or constructor that is not declared private may cause a linkage error if the member or constructor is used by a pre-existing binary.
-        err(deletedNonPrivateFields nonEmpty)("Must not delete non-private fields: "+ deletedNonPrivateFields mkString)
+        err(deletedNonPrivateFields nonEmpty)("Must not delete non-private fields: "+ (deletedNonPrivateFields map (_.signature)) mkString)
       } ++ {
 /* TODO:
 No incompatibility with pre-existing binaries is caused by
@@ -108,21 +120,22 @@ No incompatibility with pre-existing binaries is caused by
         def lessAccess(lm: MemberDisassembly, rm: MemberDisassembly): List[ClassChange] =
           err((  lm.isDefaultAccess && rm.isPrivate
               || lm.isProtected && (rm.isDefaultAccess || rm.isPrivate)
-              || lm.isPublic && (rm.isProtected || rm.isDefaultAccess || rm.isPrivate)))("Must not restrict access of member "+(lm, rm))
+              || lm.isPublic && (rm.isProtected || rm.isDefaultAccess || rm.isPrivate)))("Must not restrict access of member "+ lm.signature +" to "+ rm.signature)
 
         def changesMeta(lm: MemberDisassembly, rm: MemberDisassembly): List[ClassChange] =
-          err(!rm.isPrivate && lm.isStatic != rm.isStatic)("Must not change static-ness "+(lm, rm))
+          err(!rm.isPrivate && lm.isStatic != rm.isStatic)("Must not change static-ness "+ rm.name)
 
         def makesFinal(lm: MemberDisassembly, rm: MemberDisassembly): List[ClassChange] =
-          err(!lm.isStatic && !lm.isFinal && rm.isFinal)("Must not make final "+(lm, rm))
+          err(!lm.isStatic && !lm.isFinal && rm.isFinal)("Must not make final "+ rm.name)
 
         // "Changing a method that is not declared abstract to be declared abstract will break compatibility" <-- did lawyers write this?
-        def makesAbstract(origClass: Disassembly, rm: MethodDisassembly): List[ClassChange] =
-          err(!rm.isAbstract || {val origs = origClass.inherited(rm); origs.nonEmpty && origs.forall(_.asInstanceOf[MethodDisassembly].isAbstract)})("Must not introduce a new abstract method "+(origClass, origClass.inherited(rm), rm))
+        def makesAbstract(origClass: Disassembly, rm: MethodDisassembly): List[ClassChange] = { implicit val javap = javapOrig
+          err(!rm.isAbstract || {val origs = origClass.inherited(rm); origs.nonEmpty && origs.forall(_.asInstanceOf[MethodDisassembly].isAbstract)})("Must not introduce a new abstract method "+ rm.signature +" in "+ origClass.javaName)
+        }
 
 //        val keptFields = (lhsFields -- deletedFields) filter (!_.isPrivate)
 //        val keptMethods = (lhsMethods -- deletedMethods) filter (!_.isPrivate)
-
+        implicit val javap = javapOrig // inherited is called on lhs classes from now on
         (for(rm <- rhsMethods; // for all members directly in the new class
             inheritedLhsM <- lhs inherited rm; // all matching (exact same signature) inherited members in the original class
             change <- lessAccess(inheritedLhsM, rm)/*13.4.11a*/ ++ changesMeta(inheritedLhsM, rm)/*13.4.11b*/ ++ makesFinal(inheritedLhsM, rm)/*13.4.15*/) yield change) ++

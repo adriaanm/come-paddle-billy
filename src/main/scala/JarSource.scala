@@ -19,7 +19,7 @@ class JarSource(file: File) {
       if (isDirectory) Array()
       else new Streamable.Bytes { val inputStream = stream } toByteArray
     
-    def disassembly = Javap.fromBytes(bytes)
+    def disassembly = Javap.fromBytes(bytes) withName (file.toString+"/"+name)
     override def toString = name
   }
   

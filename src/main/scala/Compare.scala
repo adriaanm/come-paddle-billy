@@ -6,9 +6,9 @@ import compare.{ClassChange, ClassChangeReport}
 object Billy {
   /** Compares the first two things it sees in dists/ */
   def main(args: Array[String]): Unit = {
-    val paths = Directory("dists").dirs.toArray map (_ / "lib" path) take 2
+    val paths = Directory("dists").dirs.toArray map (_ / "lib" path) take 2 map (s => Path(s).toDirectory)
 
-    if (paths.size == 2) Compare.main(paths)
+    if (paths.size == 2) Compare.dirs(paths(0), paths(1))
     else println("\n  ** Place two scala distributions in the dists/ directory.\n")
   }
 }
@@ -18,15 +18,15 @@ object Compare {
     val files = d1.files filter Path.isJarOrZip toList
     val pairs = files collect { case f1 if d2 / f1.name exists => (f1, d2 /f1.name toFile) }
     val names = pairs map { case (x, _) => x.name }
-    
+    val classPaths = pairs.unzip
     println("Found " + names.size + " jars to compare:")
     names foreach println
     println("")
     
-    pairs foreach { case (f1, f2) => jars(f1, f2) }
+    pairs foreach { case (f1, f2) => jars(classPaths._1, f1, classPaths._2, f2) }
   }
   
-  def jars(f1: File, f2: File) = {
+  def jars(cp1: List[File], f1: File, cp2: List[File], f2: File) = {
     val lhs       = new JarDisassembly(f1)
     val rhs       = new JarDisassembly(f2)
     val missing   = new ListBuffer[String]
@@ -38,9 +38,10 @@ object Compare {
     for ((className, lhsClass) <- lhs; if(lhsClass.isPublic)) { // anything goes for non-public classes -- break into our packages at your own peril
       (rhs get className) match {
         case Some(rhsClass) =>
-            ClassChangeReport(lhsClass, rhsClass) match {
+            ClassChangeReport(cp1, lhsClass, cp2, rhsClass) match {
               case List() => identical += className
               case changes => changed += ((className, changes))
+              println("change: "+(className, changes))
             }
         case _ => missing += className    // TODO it's okay for a non-public class to be missing
       }
@@ -63,13 +64,13 @@ object Compare {
     }
   }
 
-  def main(args: Array[String]): Unit = {
-    if (args.size != 2)
-      return println("Usage: Compare <path1> <path2>")
-
-    val paths = args.toList map (x => Path(x))
-    if (paths forall (_.isFile)) Compare.jars(paths(0).toFile, paths(1).toFile)
-    else if (paths forall (_.isDirectory)) Compare.dirs(paths(0).toDirectory, paths(1).toDirectory)
-    else println("Don't understand paths: " + paths.mkString(", "))
-  }
+//  def main(args: Array[String]): Unit = {
+//    if (args.size != 2)
+//      return println("Usage: Compare <path1> <path2>")
+//
+//    val paths = args.toList map (x => Path(x))
+//    if (paths forall (_.isFile)) Compare.jars(paths(0).toFile, paths(1).toFile)
+//    else if (paths forall (_.isDirectory)) Compare.dirs(paths(0).toDirectory, paths(1).toDirectory)
+//    else println("Don't understand paths: " + paths.mkString(", "))
+//  }
 }

@@ -89,9 +89,12 @@ class FieldDisassembly(val javaClassName: String, val data: FieldData) extends M
 }
 
 class Disassembly(val bytes: Array[Byte]) {
+  var name: String = _
+  def withName(n: String): this.type = {name = n; this}
+
   def mkStream  = new ByteArrayInputStream(bytes)  
-  val pw        = new PrintWriter(System.out, true)
-  val printer   = new JavapPrinter(mkStream, pw, newJavapEnv)
+  lazy val pw        = new PrintWriter(System.out, true)
+  lazy val printer   = new JavapPrinter(mkStream, pw, newJavapEnv)
   import printer._
   
   def lines(s: String) = s split '\n'
@@ -132,18 +135,35 @@ class Disassembly(val bytes: Array[Byte]) {
   def isPublic    = cdata.getAccess contains "public"
   def isFinal     = cdata.getAccess contains "final"
   def superClassName      = cdata.getSuperClassName
-  def superInterfaceNames = cdata.getSuperInterfaces
+  def superInterfaceNames = cdata.getSuperInterfaces.toList
 
-  lazy val superClass      = (Javap fromName superClassName).get
-  lazy val superInterfaces = superInterfaceNames map (n => (Javap fromName n).get)
+  def superClass(implicit javap: Javap)      =
+    if(superClassName eq null) List() // skip Object (i'm assuming that's what a null superclass is)
+    else {
+      (javap fromName superClassName) match {
+        case Some(c) => List(c)
+        case None => println("Billy can't find super class "+ superClassName +" for "+ name +" in "+ javap.loader)    // TODO
+        Thread.dumpStack()
+        List()
+      }
+    }
+  def superInterfaces(implicit javap: Javap) = superInterfaceNames flatMap { n => 
+    (javap fromName n) match {
+      case Some(c) => List(c)
+      case None => println("Billy can't find super interface "+ n +" for "+ name +" in "+ javap.loader)    // TODO
+      Thread.dumpStack()
+      List()
+    }
+  }
 
   // list of members that match m, defined/declared directly in this class or one of its transitive superclasses/superinterfaces
   // if m.isMethod => result forall _.isMethod (same thing for isField)
-  def inherited(m: MemberDisassembly): List[MemberDisassembly] =
-    (superClass inherited m) ++ (superInterfaces flatMap (_ inherited m)) ++ member(m)
+  def inherited(m: MemberDisassembly)(implicit javap: Javap): List[MemberDisassembly] =
+    (superClass flatMap (_ inherited m)) ++ (superInterfaces flatMap (_ inherited m)) ++ member(m)
 
+  // members matching given member m
   def member(m: MemberDisassembly): List[MemberDisassembly] =
-    (methods ++ fields) filter (_.internalSig == m.internalSig)
+    (methods ++ fields) filter (o => o.name == m.name && o.internalSig == m.internalSig)
 
   def showFields()        = printfields()
   def showHeader()        = printclassHeader()
