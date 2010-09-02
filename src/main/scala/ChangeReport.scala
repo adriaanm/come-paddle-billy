@@ -48,7 +48,8 @@ If a class that was declared public is changed to not be declared public, then a
 Changing a class that was not declared public to be declared public does not break compatibility with pre-existing binaries.
 */
 object Public extends ClassAnalyzer {
-  def apply(lhs: Disassembly, rhs: Disassembly) = err(!rhs.isPublic && lhs.isPublic)("Must be public.")
+  def apply(lhs: Disassembly, rhs: Disassembly) = err(!rhs.isPublic)("Must be public.") // && lhs.isPublic is implied
+  // we don't compare non-public classes in original to anything, assume all classes inside scala.* are compiled together (can still inherit from public classes in scala.* of course)
 }
 
 /*
@@ -70,8 +71,12 @@ object Hierarchy extends ClassAnalyzer {
 
 */
 object ClassBody extends ClassAnalyzer {
-  def byNameDiff[T <: MemberDisassembly](as: List[T], bs: List[T]): List[T] = as filter (a => !bs.exists(b => a.name == b.name))
-  def sameNameDiff[T <: MemberDisassembly](ms: List[T], m: T): List[T] = ms filter (a => a.name == m.name)
+  def diffBy(as: List[MemberDisassembly], bs: List[MemberDisassembly])(p: (MemberDisassembly, MemberDisassembly) => Boolean): List[MemberDisassembly]
+    = as filter (a => !bs.exists(b => p(a, b)))
+  def sameNameDiff[T <: MemberDisassembly](ms: List[T], m: T): List[T]
+    = ms filter (a => a.name == m.name)
+
+
   def apply(lhs: Disassembly, rhs: Disassembly) = {
     val lhsMethods = lhs.methods
     val rhsMethods = rhs.methods
@@ -79,12 +84,16 @@ object ClassBody extends ClassAnalyzer {
     val rhsFields = rhs.fields
     if(lhsMethods == rhsMethods && lhsFields == rhsFields) List()
     else {
-      val deletedMethods = byNameDiff(lhsMethods, rhsMethods)
-      val deletedNonPrivateMethods = deletedMethods filter (m => m.access != "private")
-      val deletedFields = byNameDiff(lhsFields, rhsFields)
-      val deletedNonPrivateFields = deletedFields filter (m => m.access != "private")
+      /* 13.4.13 Changing the name of a method, the type of a formal parameter to a method or constructor, or adding a parameter to or deleting a parameter from a method or constructor declaration
+      creates a method or constructor with a new signature, and has the combined effect of
+      deleting the method or constructor with the old signature
+      and adding a method or constructor with the new signature.*/
+      val deletedMethods = diffBy(lhsMethods, rhsMethods){_.internalSig == _.internalSig}
+      val deletedNonPrivateMethods = deletedMethods filter (! _.isPrivate)
+      val deletedFields = diffBy(lhsFields, rhsFields){_.internalSig == _.internalSig}
+      val deletedNonPrivateFields = deletedFields filter (! _.isPrivate)
 // Deleting a class member or constructor that is not declared private may cause a linkage error if the member or constructor is used by a pre-existing binary.
-      err(deletedNonPrivateMethods nonEmpty)("Must not delete non-private methods: "+ deletedNonPrivateMethods mkString) ++ {
+      err(deletedNonPrivateMethods exists (m => rhs.inherited(m).isEmpty))("Must not delete non-private methods: "+ deletedNonPrivateMethods mkString) ++ { // okay if it has been pulled up
   // Deleting a class member or constructor that is not declared private may cause a linkage error if the member or constructor is used by a pre-existing binary.
         err(deletedNonPrivateFields nonEmpty)("Must not delete non-private fields: "+ deletedNonPrivateFields mkString)
       } ++ {
@@ -98,23 +107,35 @@ No incompatibility with pre-existing binaries is caused by
         // if the access modifier is changed from default access to private access; from protected access to default or private access; or from public access to protected, default, or private access
         def lessAccess(lm: MemberDisassembly, rm: MemberDisassembly): List[ClassChange] =
           err((  lm.isDefaultAccess && rm.isPrivate
-              || lm.isProtected && (rm.isDefaultAccess|| rm.isPrivate)
+              || lm.isProtected && (rm.isDefaultAccess || rm.isPrivate)
               || lm.isPublic && (rm.isProtected || rm.isDefaultAccess || rm.isPrivate)))("Must not restrict access of member "+(lm, rm))
+
         def changesMeta(lm: MemberDisassembly, rm: MemberDisassembly): List[ClassChange] =
           err(!rm.isPrivate && lm.isStatic != rm.isStatic)("Must not change static-ness "+(lm, rm))
-        def makesAbstract(lm: MemberDisassembly, rm: MemberDisassembly): List[ClassChange] =
-          err(!rm.isAbstract || lm.isAbstract)("Must not make abstract "+(lm, rm))
+
         def makesFinal(lm: MemberDisassembly, rm: MemberDisassembly): List[ClassChange] =
-          err(!lm.isFinal && rm.isFinal)("Must not make final "+(lm, rm))
-        val keptMethods = lhsMethods -- deletedMethods
-        for(lm <- keptMethods;
-            rm <- sameName(rhsMethods, lm)) yield {
-          lessAccess(lm, rm) ++ changesMeta(lm, rm) ++ makesAbstract(lm, rm)
-        }
+          err(!lm.isStatic && !lm.isFinal && rm.isFinal)("Must not make final "+(lm, rm))
 
+        // "Changing a method that is not declared abstract to be declared abstract will break compatibility" <-- did lawyers write this?
+        def makesAbstract(origClass: Disassembly, rm: MethodDisassembly): List[ClassChange] =
+          err(!rm.isAbstract || {val origs = origClass.inherited(rm); origs.nonEmpty && origs.forall(_.asInstanceOf[MethodDisassembly].isAbstract)})("Must not introduce a new abstract method "+(origClass, origClass.inherited(rm), rm))
 
+//        val keptFields = (lhsFields -- deletedFields) filter (!_.isPrivate)
+//        val keptMethods = (lhsMethods -- deletedMethods) filter (!_.isPrivate)
+
+        (for(rm <- rhsMethods; // for all members directly in the new class
+            inheritedLhsM <- lhs inherited rm; // all matching (exact same signature) inherited members in the original class
+            change <- lessAccess(inheritedLhsM, rm)/*13.4.11a*/ ++ changesMeta(inheritedLhsM, rm)/*13.4.11b*/ ++ makesFinal(inheritedLhsM, rm)/*13.4.15*/) yield change) ++
+        (for(rm <- rhsMethods;
+             change <- makesAbstract(lhs, rm)/*13.4.14*/) yield change) ++
+        (for(rm <- rhsFields;
+             inheritedLhsM <- lhs inherited rm;
+             change <- lessAccess(inheritedLhsM, rm)/*13.4.7a*/ ++ changesMeta(inheritedLhsM, rm)/*13.4.7b*/ ++ makesFinal(inheritedLhsM, rm)/*13.4.8*/) yield change)
+
+        // TODO: check for compile-time incompatibilities
+        // 13.4.21: adding a new overloaded method or constructor may cause a compile-time error the next time
+        // a class or interface is compiled because there is no method or constructor that is most specific
       }
-
     }
   }
 }

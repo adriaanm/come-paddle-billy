@@ -26,36 +26,44 @@ object JarDisassembly {
   def apply(file: File): JarDisassembly = new JarDisassembly(file)
 }
 
-class MemberDisassembly {
+abstract class MemberDisassembly {
+  def isMethod = false
+  def isField = false
   def name: String
-  def signature: String
   def javaSig: String
-  def isStatic: Boolean
-  def isProtected: Boolean
-  def isDefaultAccess: Boolean
-  def isPrivate: Boolean
-  def isFinal: Boolean
+  def internalSig: String
+  protected def withAccess(str: String) =
+    if (access.isEmpty) str
+    else access :+ str mkString " "
+  def signature = withAccess(name + internalSig)
+
+  protected def access: List[String]
+  lazy val isProtected: Boolean = access contains "protected"
+  lazy val isDefaultAccess: Boolean = !isProtected && !isPrivate && !isPublic
+  lazy val isPrivate: Boolean = access contains "private"
+  lazy val isPublic: Boolean = access contains "public"
+  lazy val isStatic: Boolean = access contains "static"
+  lazy val isFinal: Boolean = access contains "final"
+
+  override def toString = signature
+  override def hashCode = signature.hashCode
 }
 
 
 class MethodDisassembly(val javaClassName: String, val data: MethodData) extends MemberDisassembly {
-  private def withAccess(str: String) =
-    if (access.isEmpty) str
-    else access :+ str mkString " "
-  
+  override def isMethod = true
+
   def name      = data.getName
   def params    = data.getParameters
-  def signature = withAccess(name + data.getInternalSig)
-  def access = data.getAccess.toList
+  lazy val access = data.getAccess.toList
   def returnTpe = data.getReturnType
-  def isStatic = data.isStatic
+  def isAbstract  = access contains "abstract"
 
   def javaSig = withAccess(
     if (name == "<init>") javaClassName + params
     else returnTpe + " " + name + params
   )
-  override def toString = signature
-  override def hashCode = signature.hashCode
+  def internalSig: String = data.getInternalSig
   override def equals(other: Any) = other match {
     case x: MethodDisassembly => signature == x.signature
     case _                    => false
@@ -63,29 +71,22 @@ class MethodDisassembly(val javaClassName: String, val data: MethodData) extends
 }
 
 class FieldDisassembly(val javaClassName: String, val data: FieldData) extends MemberDisassembly {
-  private def withAccess(str: String) =
-    if (access.isEmpty) str
-    else access :+ str mkString " "
+  override def isField = true
 
-  def name      = data.getName
-  def signature = withAccess(name + data.getInternalSig)
-  def access = data.getAccess.toList
-  def tpe = data.getType
-  def isSynthetic = data.isSynthetic
-  def isStatic = data.isStatic
+  def name   = data.getName
+  lazy val access = data.getAccess.toList
+  def tpe    = data.getType
+//  def isSynthetic = data.isSynthetic
+  def internalSig: String = data.getInternalSig
 
   def javaSig = withAccess(
     tpe + " " + name
   )
-  override def toString = signature
-  override def hashCode = signature.hashCode
   override def equals(other: Any) = other match {
     case x: FieldDisassembly  => signature == x.signature
     case _                    => false
   }
 }
-
-
 
 class Disassembly(val bytes: Array[Byte]) {
   def mkStream  = new ByteArrayInputStream(bytes)  
@@ -122,16 +123,27 @@ class Disassembly(val bytes: Array[Byte]) {
   val cdata       = new ClassData(mkStream)
   def className   = cdata.getClassName
   def javaName    = javaclassname(className)
-  def methods     = cdata.getMethods.toList map (x => new MethodDisassembly(javaName, x)) sortBy (_.name)
-  def fields      = cdata.getFields.toList map (x => new FieldDisassembly(javaName, x)) sortBy (_.name)
+  lazy val methods = cdata.getMethods.toList map (x => new MethodDisassembly(javaName, x)) sortBy (_.name)
+  lazy val fields = cdata.getFields.toList map (x => new FieldDisassembly(javaName, x)) sortBy (_.name)
   def attrs       = cdata.getAttributes.toList
   def inners      = cdata.getInnerClasses.toList
   def sourceName  = strip(cdata.getSourceName())
   def isAbstract  = cdata.getAccess contains "abstract"
   def isPublic    = cdata.getAccess contains "public"
   def isFinal     = cdata.getAccess contains "final"
-  def superClassName  = cdata.getSuperClassName
-  def superInterfaces = cdata.getSuperInterfaces
+  def superClassName      = cdata.getSuperClassName
+  def superInterfaceNames = cdata.getSuperInterfaces
+
+  lazy val superClass      = (Javap fromName superClassName).get
+  lazy val superInterfaces = superInterfaceNames map (n => (Javap fromName n).get)
+
+  // list of members that match m, defined/declared directly in this class or one of its transitive superclasses/superinterfaces
+  // if m.isMethod => result forall _.isMethod (same thing for isField)
+  def inherited(m: MemberDisassembly): List[MemberDisassembly] =
+    (superClass inherited m) ++ (superInterfaces flatMap (_ inherited m)) ++ member(m)
+
+  def member(m: MemberDisassembly): List[MemberDisassembly] =
+    (methods ++ fields) filter (_.internalSig == m.internalSig)
 
   def showFields()        = printfields()
   def showHeader()        = printclassHeader()

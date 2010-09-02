@@ -35,13 +35,13 @@ object Compare {
     
     println(">> Now processing: " + lhs.size + " classes in " + f1.name + ".\n")
     
-    for ((className, lhsClass) <- lhs) {
+    for ((className, lhsClass) <- lhs; if(lhsClass.isPublic)) { // anything goes for non-public classes -- break into our packages at your own peril
       (rhs get className) match {
         case Some(rhsClass) =>
-          ClassChangeReport(lhsClass, rhsClass) match {
-            case List() => identical += className
-            case changes => changed += (className, changes)
-          }
+            ClassChangeReport(lhsClass, rhsClass) match {
+              case List() => identical += className
+              case changes => changed += ((className, changes))
+            }
         case _ => missing += className    // TODO it's okay for a non-public class to be missing
       }
     }
