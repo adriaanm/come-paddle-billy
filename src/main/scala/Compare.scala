@@ -1,6 +1,8 @@
 package improving
 package jar
 
+import compare.{ClassChange, ClassChangeReport}
+
 object Billy {
   /** Compares the first two things it sees in dists/ */
   def main(args: Array[String]): Unit = {
@@ -28,45 +30,26 @@ object Compare {
     val lhs       = new JarDisassembly(f1)
     val rhs       = new JarDisassembly(f2)
     val missing   = new ListBuffer[String]
-    val rresolve  = new ListBuffer[String]
     val identical = new ListBuffer[String]
-    val changed   = new ListBuffer[(String, List[String])]
+    val changed   = new ListBuffer[(String, List[ClassChange])]
     
     println(">> Now processing: " + lhs.size + " classes in " + f1.name + ".\n")
     
-    for ((k, v) <- lhs) {
-      if (rhs contains k) {
-        val xs1 = v.methods
-        val xs2 = rhs(k).methods
-        
-        if (xs1 == xs2) identical += k
-        else {
-          val ldiff = xs1 filterNot (xs2 contains _)
-          val rdiff = xs2 filterNot (xs1 contains _)
-          
-          if (ldiff ++ rdiff forall (_.name == "readResolve")) rresolve += k
-          else {
-            val tagged = (ldiff map (x => (x, true))) ++ (rdiff map (x => (x, false)))
-            val combined = tagged sortBy (_._1.name) map {
-              case (x, true)  => "< " + x.signature
-              case (x, false) => "> " + x.signature
-            }
-            changed += ((k, combined))
+    for ((className, lhsClass) <- lhs) {
+      (rhs get className) match {
+        case Some(rhsClass) =>
+          ClassChangeReport(lhsClass, rhsClass) match {
+            case List() => identical += className
+            case changes => changed += (className, changes)
           }
-        }
+        case _ => missing += className    // TODO it's okay for a non-public class to be missing
       }
-      else missing += k
     }
     
     println("Classes identical in both jars: " + identical.size + "\n")
     if (missing.nonEmpty) {
       println("Classes missing from new jar: " + missing.size)
       missing.sorted foreach println
-      println("")
-    }
-    if (rresolve.nonEmpty) {
-      println("Classes differing only in the readResolve() method: " + rresolve.size)
-      rresolve.sorted foreach println
       println("")
     }
     if (changed.nonEmpty) {

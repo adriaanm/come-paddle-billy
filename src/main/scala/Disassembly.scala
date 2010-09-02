@@ -14,6 +14,7 @@ class JarDisassembly(file: File) extends Iterable[(String, Disassembly)] {
 
   def contains(name: String) = map contains name
   def apply(name: String) = map(name)
+  def get(name: String) = map.get(name)
   def iterator = map.iterator
   def keys     = map.keys
   def values   = map.values
@@ -25,18 +26,33 @@ object JarDisassembly {
   def apply(file: File): JarDisassembly = new JarDisassembly(file)
 }
 
-class MethodDisassembly(val javaClassName: String, val data: MethodData) {
+class MemberDisassembly {
+  def name: String
+  def signature: String
+  def javaSig: String
+  def isStatic: Boolean
+  def isProtected: Boolean
+  def isDefaultAccess: Boolean
+  def isPrivate: Boolean
+  def isFinal: Boolean
+}
+
+
+class MethodDisassembly(val javaClassName: String, val data: MethodData) extends MemberDisassembly {
   private def withAccess(str: String) =
-    if (data.getAccess.isEmpty) str
-    else data.getAccess :+ str mkString " "
+    if (access.isEmpty) str
+    else access :+ str mkString " "
   
   def name      = data.getName
   def params    = data.getParameters
   def signature = withAccess(name + data.getInternalSig)
-  
+  def access = data.getAccess.toList
+  def returnTpe = data.getReturnType
+  def isStatic = data.isStatic
+
   def javaSig = withAccess(
     if (name == "<init>") javaClassName + params
-    else data.getReturnType + " " + name + params
+    else returnTpe + " " + name + params
   )
   override def toString = signature
   override def hashCode = signature.hashCode
@@ -45,6 +61,31 @@ class MethodDisassembly(val javaClassName: String, val data: MethodData) {
     case _                    => false
   }
 }
+
+class FieldDisassembly(val javaClassName: String, val data: FieldData) extends MemberDisassembly {
+  private def withAccess(str: String) =
+    if (access.isEmpty) str
+    else access :+ str mkString " "
+
+  def name      = data.getName
+  def signature = withAccess(name + data.getInternalSig)
+  def access = data.getAccess.toList
+  def tpe = data.getType
+  def isSynthetic = data.isSynthetic
+  def isStatic = data.isStatic
+
+  def javaSig = withAccess(
+    tpe + " " + name
+  )
+  override def toString = signature
+  override def hashCode = signature.hashCode
+  override def equals(other: Any) = other match {
+    case x: FieldDisassembly  => signature == x.signature
+    case _                    => false
+  }
+}
+
+
 
 class Disassembly(val bytes: Array[Byte]) {
   def mkStream  = new ByteArrayInputStream(bytes)  
@@ -60,7 +101,7 @@ class Disassembly(val bytes: Array[Byte]) {
     })
   }
   
-  def fields() = pwString(_.printfields())
+  //  def fields() = pwString(_.printfields())
   // asInstanceOf          getAccess             getArgumentlength
   // getAttributes         getCode               getCodeAttributes
   // getInternalSig        getMaxLocals          getMaxStack
@@ -82,10 +123,16 @@ class Disassembly(val bytes: Array[Byte]) {
   def className   = cdata.getClassName
   def javaName    = javaclassname(className)
   def methods     = cdata.getMethods.toList map (x => new MethodDisassembly(javaName, x)) sortBy (_.name)
+  def fields      = cdata.getFields.toList map (x => new FieldDisassembly(javaName, x)) sortBy (_.name)
   def attrs       = cdata.getAttributes.toList
   def inners      = cdata.getInnerClasses.toList
   def sourceName  = strip(cdata.getSourceName())
-  
+  def isAbstract  = cdata.getAccess contains "abstract"
+  def isPublic    = cdata.getAccess contains "public"
+  def isFinal     = cdata.getAccess contains "final"
+  def superClassName  = cdata.getSuperClassName
+  def superInterfaces = cdata.getSuperInterfaces
+
   def showFields()        = printfields()
   def showHeader()        = printclassHeader()
   def showInnerClasses()  = printInnerClasses()
