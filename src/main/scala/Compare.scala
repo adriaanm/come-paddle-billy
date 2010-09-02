@@ -4,11 +4,10 @@ package jar
 object Billy {
   /** Compares the first two things it sees in dists/ */
   def main(args: Array[String]): Unit = {
-    val paths = Directory("dists").list.toArray filter (_.name startsWith "scala") map (x => x / "lib") take 2
-    if (paths.size == 2 && (paths forall (_.exists)))
-      Compare.main(paths map (_.path))
-    else
-      println("\n  ** Place symlinks to scala distributions in the dists/ directory.\n")
+    val paths = Directory("dists").dirs.toArray map (_ / "lib" path) take 2
+
+    if (paths.size == 2) Compare.main(paths)
+    else println("\n  ** Place two scala distributions in the dists/ directory.\n")
   }
 }
 
